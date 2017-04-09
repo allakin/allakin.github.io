@@ -5,5 +5,12 @@
 
 ### Используется шрифты
 
-- Open Sans Extra Bold
+- Open Sans ExtraBold
 - Roboto Regular
+
+### Используется цвета
+
+- EF4F80 - Main color
+- 97EE4F - Accent color
+- BC46CB - Additional purple color
+- DDF34B - Additional yellow color
