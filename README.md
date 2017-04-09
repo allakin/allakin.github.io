@@ -1,7 +1,23 @@
-# anpleenko.ru
 
-[![Build Status](https://travis-ci.org/allakin/allakin.github.io.svg?branch=dev)](https://travis-ci.org/allakin/allakin.github.io)
-[![edit repo](https://img.shields.io/badge/edit-prose.io-blue.svg)](http://prose.io/#allakin/allakin.github.io)
+<h1 align="center">
+  Anpleenko.ru
+</h1>
+
+<p align="center">
+  <a href="http://anpleenko.ru" target="_blank">
+    <img src="https://github.com/allakin/allakin.github.io/blob/dev/src/images/favicon-192.png?raw=true">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/allakin/allakin.github.io" target="_blank">
+    <img src="https://travis-ci.org/allakin/allakin.github.io.svg?branch=dev">
+  </a>
+
+  <a href="http://prose.io/#allakin/allakin.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/edit-prose.io-blue.svg">
+  </a>
+</p>
 
 ### Используются шрифты
 
