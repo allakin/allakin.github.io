@@ -1,19 +1,21 @@
 language: node_js
+
 node_js:
   - 6
+
 env:
   global:
     - GH_REF: github.com/allakin/allakin.github.io.git
     - secure: erEjCcgAxPIBsOMJLx+och2Ds10b7RIMkQxGVOO1ycpCo4eFlMzjwwEuo3tZ89129i3vyHrI+I+2ooTbWn4EULwxOkItRdwi8WWwGCd1txOSMRD3BFGUfJ8/3ARVeAub590bTTbshuGxuupDwqO+DWcG6tTAhzfZ4HhvA3TBUB9kZ45RbdY+BwTfphOUF9oWyZrw6lm2KP9tn4eQpOr+RqeceEcoxjtekL09cHCIxVIRISugroXqzgB3r8YSYYTdOg8f8vTdihAwBjaOiiJZKy80tivTdtudpQjcWX7/3j+Z///ZDkbroR+WRymqtKxzRqQ8b+oTRxoVlBjrQbxnqENIIrwxADkryn+zOga8L26U8gJjaH/EDvFfoTK3NrVB8biK4BfnbCtAbsu/ISTEbIWP+IxxMPsL0Y3SZgoZ5vQwtS8EJS7YTymBb4+AqL22MUINwDX600lTWjrvOlJc+YzjJMD0qmDiIAu4UZah9Eqj3aCVyR0GcBDToBXaauDAItLYrZAWewEXCwR8yBHXYhdwtETmycgy7EKnipuMKVEESs2jVhPATIKG1RGIN7fMewjC3iroFlLNbUfz5/2xZJ1Hd9apAUhB1mVBLPM8+KBDTUg5tx2F9jpgA2O+AjbydeSVTfulVCUeeX9aofqTAWBiZ/W/d592mTFG2Iq9cHY=
+
 before_install:
   - npm config set depth 0
+
 before_script:
-  # - npm install -g bower
-  # - npm install -g gulp
-script:
-  - NODE_ENV=production make build
+  - make build
   - make zip
 
+script:
   - cd dist
   - git init
   - git config user.name "Pavel Anpleenko"
