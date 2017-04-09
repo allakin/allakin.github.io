@@ -1,20 +1,19 @@
-
 <h1 align="center">
   Anpleenko.ru
 </h1>
 
 <p align="center">
-  <a href="http://anpleenko.ru" target="_blank">
+  <a href="http://anpleenko.ru">
     <img src="https://github.com/allakin/allakin.github.io/blob/dev/src/images/favicon-192.png?raw=true">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/allakin/allakin.github.io" target="_blank">
+  <a href="https://travis-ci.org/allakin/allakin.github.io">
     <img src="https://travis-ci.org/allakin/allakin.github.io.svg?branch=dev">
   </a>
 
-  <a href="http://prose.io/#allakin/allakin.github.io" target="_blank">
+  <a href="http://prose.io/#allakin/allakin.github.io">
     <img src="https://img.shields.io/badge/edit-prose.io-blue.svg">
   </a>
 </p>
