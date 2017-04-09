@@ -1,0 +1,85 @@
+doctype html
+html(lang="ru")
+  head
+    block title
+      title Title
+
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1 user-scalable=no maximum-scale=1")
+
+    meta(name="keywords", content="")
+    meta(name="author", content="")
+    meta(name="description", content="")
+
+    meta(property="og:type", content="article")
+    meta(property="og:url", content="test url")
+    meta(property="og:title", content="test title")
+    meta(property="og:description", content="test description")
+    meta(property="og:image", content="image_url")
+
+    meta(name="twitter:card", content="")
+    meta(name="twitter:site", content="")
+    meta(name="twitter:creator", content="")
+
+    //- Для IE 10 и ниже
+    //- Не используется ссылка, просто разместите файл, который называется favicon.ico в корне вашего сайта
+    //- Для IE 11, Chrome, Firefox, Safari, Opera
+    link(rel='icon', href='img/favicon-16.png', sizes='16x16', type='image/png')
+    link(rel='icon', href='img/favicon-32.png', sizes='32x32', type='image/png')
+    link(rel='icon', href='img/favicon-48.png', sizes='48x48', type='image/png')
+    link(rel='icon', href='img/favicon-62.png', sizes='62x62', type='image/png')
+    link(rel='icon', href='img/favicon-192.png', sizes='192x192', type='image/png')
+    //- Больше информации: https://bitsofco.de/all-about-favicons-and-touch-icons/
+
+    //- добавляем normalize.css
+    link(href="https://unpkg.com/normalize.css", rel="stylesheet")
+
+    //- подключаем файл со стилями
+    link(href="css/style.css", rel="stylesheet")
+
+    |<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    |<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    |<!--[if lt IE 9]>
+    |  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    |  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    |<![endif]-->
+
+    block header_style
+    block header_script
+
+  body
+    .off-canvas-wrapper
+      .off-canvas-wrapper-inner
+        .off-canvas.position-left
+          include ../components/menu-mobile-left/_menu-mobile-left
+
+        .off-canvas-content
+          .open-menu__button(data-show="left-menu") open left menu
+          .open-menu__button(data-show="right-menu") open right menu
+
+          main
+            include ../components/header/_header.jade
+
+            block content
+
+          block footer
+            include ../components/footer/_footer.jade
+
+          .js-off-canvas-exit
+        .off-canvas.position-right
+          include ../components/menu-mobile-right/_menu-mobile-right
+
+    block modal
+
+    //- библиотека для подгрузки файлов ассинхронно
+    script(src="http://vaeum.com/cdn/extsrcjs.js")
+
+    //- подключаем Jquery JS
+    script(extsrc="js/jquery.min.js")
+
+    block script
+
+    //- подключаем главный JS файл
+    script(extsrc="js/main.js")

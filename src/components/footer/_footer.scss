@@ -1,0 +1,48 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  // display: table;
+  // width: 100%;
+}
+
+main {
+  display: table-row;
+  height: 100%;
+}
+
+.off-canvas{
+  &-content{
+    min-height: 100%;
+  }
+
+  &-wrapper{
+    min-height: 100%;
+
+    &-inner{
+      min-height: 100%;
+    }
+  }
+
+  &-content{
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(10,10,10,0.5);
+
+    // fixad content block
+    table-layout: fixed;
+  }
+}
+
+
+/*
+-------------------------------------------------- */
+
+.footer{
+	// footer style
+}
