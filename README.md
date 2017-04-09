@@ -8,9 +8,15 @@
 - Open Sans ExtraBold
 - Roboto Regular
 
-### Используется цвета
+### Используются цвета
 
 - EF4F80 - Main color
 - 97EE4F - Accent color
 - BC46CB - Additional purple color
 - DDF34B - Additional yellow color
+
+### Grids
+
+- 960px - Content
+- 12 - Column
+- 40px - Gutter
