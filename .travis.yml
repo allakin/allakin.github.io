@@ -3,8 +3,8 @@ node_js:
   - 6
 env:
   global:
-    - GH_REF: github.com/vaeum/gulp-template.git
-    - secure: QF59OFj7fWVlTuHbVAJ7nfc6K2HwjHu3XMjvcSOH/KKzaiSccTcC69O63+h+q/Jl5Vf183HUTMC90J/Pg8ZaNh2WFTAvgKqr6Z8sTT1F2S/ZJPda0V/dQqQo4HBn5/37amucyZo7SFyJw83m7uKd2ZugPEdasu9ELERJA9qodWk8am+wDejvhTdiAMOl2d0GWzeEeV3hzr1yC7funaNC+idDf1jGFiUml3I44FK77BEw2vUFCEa8Z7Gqy1T82LSLLjyP75hpsbLhGy/H7aCxBOln3uM+SMwkwn+4PrnenmMlLETJI9dWtAo+qlHS4FExxjvLBZyQMceuyA0ranXiI91utjAxAIlJtzGSPKutC3dbiUTm76cgy8zELl15V1qYRY1nFV8Ljj22NQI68YYtpmObbAlzKJe7JtQQTJVyK8EhbA36Nxd9KIgxQbjuQ4X6JwNC3v3hWrb8vOsGFQdEDfq7ZGbnp+jn9A8fWv6h949KQjdsI+lfkneDXKtQ+tdy29a94jj0zBsGw3Svs06c+4qi3Yw0/+ejdL+yt2jk4y98KEb7JCuvuVdBBD0giTsCUfCPl/w8SJDVynZxrj9MnxCYBhcrH8xB6af38TIsinfjZwu1UicWRaxHdJJYHwmoFNapKWdskiT0ZjHaaTo/soSLFRWJz1diRnOwneCM4AE=
+    - GH_REF: github.com/allakin/allakin.github.io.git
+    - secure: erEjCcgAxPIBsOMJLx+och2Ds10b7RIMkQxGVOO1ycpCo4eFlMzjwwEuo3tZ89129i3vyHrI+I+2ooTbWn4EULwxOkItRdwi8WWwGCd1txOSMRD3BFGUfJ8/3ARVeAub590bTTbshuGxuupDwqO+DWcG6tTAhzfZ4HhvA3TBUB9kZ45RbdY+BwTfphOUF9oWyZrw6lm2KP9tn4eQpOr+RqeceEcoxjtekL09cHCIxVIRISugroXqzgB3r8YSYYTdOg8f8vTdihAwBjaOiiJZKy80tivTdtudpQjcWX7/3j+Z///ZDkbroR+WRymqtKxzRqQ8b+oTRxoVlBjrQbxnqENIIrwxADkryn+zOga8L26U8gJjaH/EDvFfoTK3NrVB8biK4BfnbCtAbsu/ISTEbIWP+IxxMPsL0Y3SZgoZ5vQwtS8EJS7YTymBb4+AqL22MUINwDX600lTWjrvOlJc+YzjJMD0qmDiIAu4UZah9Eqj3aCVyR0GcBDToBXaauDAItLYrZAWewEXCwR8yBHXYhdwtETmycgy7EKnipuMKVEESs2jVhPATIKG1RGIN7fMewjC3iroFlLNbUfz5/2xZJ1Hd9apAUhB1mVBLPM8+KBDTUg5tx2F9jpgA2O+AjbydeSVTfulVCUeeX9aofqTAWBiZ/W/d592mTFG2Iq9cHY=
 before_install:
   - npm config set depth 0
 before_script:
@@ -16,8 +16,8 @@ script:
 
   - cd dist
   - git init
-  - 'git config user.name "Alexander Anpleenko"'
-  - 'git config user.email "vaeum@yahoo.com"'
+  - git config user.name "Pavel Anpleenko"
+  - git config user.email "vaeum@yahoo.com"
   - git add .
-  - 'git commit -m "Deploy to GitHub Pages"'
-  - 'git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1'
+  - git commit -m "Deploy to GitHub Pages"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master > /dev/null 2>&1
