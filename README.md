@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/allakin/allakin.github.io.svg?branch=dev)](https://travis-ci.org/allakin/allakin.github.io)
 [![edit repo](https://img.shields.io/badge/edit-prose.io-blue.svg)](http://prose.io/#allakin/allakin.github.io)
 
-### Используется шрифты
+### Используются шрифты
 
 - Open Sans ExtraBold
 - Roboto Regular
@@ -20,3 +20,7 @@
 - 960px - Content
 - 12 - Column
 - 40px - Gutter
+
+### Mind maps
+
+- [Структура сайта](https://coggle.it/diagram/WOn5zSPVCgABmm6S/1a5a8c971462316888e17e67d967445ec958e0b38a103697e3cdca63601c90da)
