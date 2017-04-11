@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import { config, $, bs, errorLogFunc } from './config';
+import { config, $, bs, errorLogFunc, isDev } from './config';
 
 gulp.task('scripts', () =>
   gulp.src(config.src.scripts)
@@ -10,6 +10,7 @@ gulp.task('scripts', () =>
       .on('error', errorLogFunc)
 
     .pipe($.concat('main.js'))
+    .pipe($.if(isDev, $.uglify()))
 
     .pipe($.addSrc('./node_modules/jquery/dist/jquery.min.js'))
 
