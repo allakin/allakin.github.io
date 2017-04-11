@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import { config, $, bs, errorLogFunc, isProd, isDev } from './config';
+import { config, $, bs, errorLogFunc, isDev } from './config';
 
 const reload = bs.reload;
 

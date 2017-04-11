@@ -19,9 +19,9 @@ export const AUTOPREFIXER_CONFIG = [
 ];
 
 export const errorLogFunc = $.notify.onError({
-  message: "Error: <%= error.message %>",
-  title: "Error running something"
-})
+  message: 'Error: <%= error.message %>',
+  title: 'Error running something',
+});
 
 // export function errorLogFunc(error) {
 //   console.error(`
@@ -40,7 +40,10 @@ export const config = {
     layouts: './src/layouts/*.jade',
     components: './src/components/**/*.jade',
     dataJson: './src/data/data.json',
-    scripts: './src/scripts/main.js',
+    scripts: [
+      './src/scripts/main.js',
+      './src/components/**/*.js',
+    ],
     images: [
       './src/images/**',
       './src/components/**/*.png',
