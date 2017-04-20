@@ -1,3 +1,29 @@
 .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  &__page-title{
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  &__menu{
+
+  }
+
+  &__menu-button{
+    background-image: url(../img/combined-shape.svg);
+    width: 27px;
+    height: 21px;
+
+    border: none;
+    background-color: transparent;
+  }
 }

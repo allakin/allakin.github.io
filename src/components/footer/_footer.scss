@@ -1,48 +1,33 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  height: 100%;
-}
+.footer{
+	position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-body {
-  height: 100%;
-  // display: table;
-  // width: 100%;
-}
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 36px;
+  padding-right: 36px;
 
-main {
-  display: table-row;
-  height: 100%;
-}
+  &__social{
 
-.off-canvas{
-  &-content{
-    min-height: 100%;
   }
 
-  &-wrapper{
-    min-height: 100%;
+  &__social-item{
+    margin-right: 20px;
 
-    &-inner{
-      min-height: 100%;
+    &:last-child{
+      margin-right: 0;
     }
   }
 
-  &-content{
-    display: table;
-    width: 100%;
-    min-height: 100vh;
-    box-shadow: 0 0 10px rgba(10,10,10,0.5);
+  &__social-link{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
 
-    // fixad content block
-    table-layout: fixed;
+    &:hover{
+      color: #000;
+    }
   }
-}
-
-
-/*
--------------------------------------------------- */
-
-.footer{
-	// footer style
 }
