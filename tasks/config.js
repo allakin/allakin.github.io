@@ -41,7 +41,7 @@ export const config = {
     components: './src/components/**/*.jade',
     dataJson: './src/data/data.json',
     scripts: [
-      './src/scripts/**/*.js',
+      './src/scripts/main.js',
       './src/components/**/*.js',
     ],
     images: [
@@ -51,6 +51,13 @@ export const config = {
       './src/components/**/*.svg',
     ],
     misc: './src/misc/**',
+  },
+
+  watch: {
+    scripts: [
+      './src/scripts/**/*.js',
+      './src/components/**/*.js',
+    ],
   },
 
   dest: {

@@ -3,7 +3,7 @@ import del from 'del';
 import { config, $ } from './config';
 
 gulp.task('watch', (cb) => {
-  gulp.watch(config.src.scripts, gulp.parallel('scripts'));
+  gulp.watch(config.watch.scripts, gulp.parallel('scripts'));
   gulp.watch(config.src.images, gulp.parallel('images'));
   gulp.watch(config.src.dataJson, gulp.parallel('jade'));
   gulp.watch(config.src.misc, gulp.parallel('misc'));
