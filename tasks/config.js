@@ -41,7 +41,7 @@ export const config = {
     components: './src/components/**/*.jade',
     dataJson: './src/data/data.json',
     scripts: [
-      './src/scripts/main.js',
+      './src/scripts/**/*.js',
       './src/components/**/*.js',
     ],
     images: [

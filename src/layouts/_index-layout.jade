@@ -50,26 +50,7 @@ html(lang="ru")
     block header_script
 
   body
-    .off-canvas-wrapper
-      .off-canvas-wrapper-inner
-        .off-canvas.position-left
-          include ../components/menu-mobile-left/_menu-mobile-left
-
-        .off-canvas-content
-          .open-menu__button(data-show="left-menu") open left menu
-          .open-menu__button(data-show="right-menu") open right menu
-
-          main
-            include ../components/header/_header.jade
-
-            block content
-
-          block footer
-            include ../components/footer/_footer.jade
-
-          .js-off-canvas-exit
-        .off-canvas.position-right
-          include ../components/menu-mobile-right/_menu-mobile-right
+    block content
 
     block modal
 
@@ -78,6 +59,7 @@ html(lang="ru")
 
     //- подключаем Jquery JS
     script(extsrc="js/jquery.min.js")
+    script(extsrc="js/jquery.jInvertScroll.min.js")
 
     block script
 

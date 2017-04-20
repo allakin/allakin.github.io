@@ -1,0 +1,85 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body{
+    overflow-x: hidden;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.scrollable{
+  top: 0px;
+  // padding-left: 160px;
+
+
+  &__wrap{
+    position: absolute;
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:nth-child(2n) {
+      .scrollable__block{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__block{
+    img{
+      // display: block;
+      &:hover{
+        box-shadow: 0 110px 70px rgba(221, 243, 75, 0.53);
+        // border: 1px solid #979797;
+        // background-color: #d8d8d8;
+      }
+    }
+  }
+
+  &__label{
+    width: 244px;
+    height: 116px;
+    background: #DEF259;
+
+    position: absolute;
+    top: 27px;
+    left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__image-wrap{
+    position: relative;
+    padding-left: 120px;
+  }
+
+  &__time{
+    // width: 97px;
+    // height: 107px;
+    opacity: 0.3;
+    color: #97ee4f;
+    // font-family: "Open Sans";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
