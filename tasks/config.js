@@ -68,6 +68,26 @@ export const config = {
     misc: './dist/',
   },
 
+  jsbeautifierConfig: {
+    braceStyle: 'expand',
+    indentWithTabs: true,
+    indentInnerHtml: true,
+    preserveNewlines: true,
+    endWithNewline: true,
+    wrapLineLength: 120,
+    maxPreserveNewlines: 50,
+    wrapAttributesIndentSize: 1,
+    unformatted: ['use'],
+  },
+
+  POSTHTML_PROCESSORS: [
+    require('posthtml-bem')({
+      elemPrefix: '__',
+      modPrefix: '_',
+      modDlmtr: '--',
+    }),
+  ],
+
   PROCESSORS: [
     require('autoprefixer')({ browsers: AUTOPREFIXER_CONFIG }),
     require('css-mqpacker'),
