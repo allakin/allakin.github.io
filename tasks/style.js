@@ -4,7 +4,7 @@ import { config, $, bs, errorLogFunc, isDev } from './config';
 const reload = bs.reload;
 
 const source = [
-  './node_modules/normalize.css/normalize.css',
+  // './node_modules/normalize.css/normalize.css',
 
   // './node_modules/bootstrap-only-css/lib/alerts.css',
   // './node_modules/bootstrap-only-css/lib/badges.css',
@@ -24,7 +24,7 @@ const source = [
   // './node_modules/bootstrap-only-css/lib/media.css',
   // './node_modules/bootstrap-only-css/lib/modals.css',
   // './node_modules/bootstrap-only-css/lib/navs.css',
-  // './node_modules/bootstrap-only-css/lib/normalize.css',
+  './node_modules/bootstrap-only-css/lib/normalize.css',
   // './node_modules/bootstrap-only-css/lib/pager.css',
   // './node_modules/bootstrap-only-css/lib/pagination.css',
   // './node_modules/bootstrap-only-css/lib/panels.css',
