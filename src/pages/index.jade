@@ -10,10 +10,11 @@ block content
     -for(var i = 0; i < 11; i++)
       div(elem="wrap")
         div(elem="block")
-          div(elem="image-wrap")
-            div(elem="label")
+          div(elem="inner-wrap")
+            a(href="#" elem="label").cur.no-underline
               span.transform-middle  Lorem ipsum dolor sit amet.
 
             span(elem="time") /12
 
-            img(src="/img/portfolio-mini-image.png", alt="portfolio mini image")
+            a(href="#" elem="image-wrap").cur
+              img(src="/img/portfolio-mini-image.png", alt="portfolio mini image" elem="image")

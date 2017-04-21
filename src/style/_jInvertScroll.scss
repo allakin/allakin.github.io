@@ -17,7 +17,6 @@ body{
   top: 0px;
   // padding-left: 160px;
 
-
   &__wrap{
     position: absolute;
     top: 0;
@@ -49,6 +48,7 @@ body{
     width: 244px;
     height: 116px;
     background: #DEF259;
+    display: block;
 
     position: absolute;
     top: 27px;
@@ -56,13 +56,18 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 
+    color: #000;
+    &:hover{
+      color: #000;
+    }
+
     span{
       font-size: 20px;
       line-height: 30px;
     }
   }
 
-  &__image-wrap{
+  &__inner-wrap{
     position: relative;
     padding-left: 120px;
   }
@@ -81,5 +86,13 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  &__image-wrap{
+    display: block;
+  }
+
+  &__image{
+    display: block;
   }
 }
