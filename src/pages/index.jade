@@ -1,6 +1,11 @@
 extends ../layouts/_index-layout
 
 block content
+  .preloader-overlay
+    .preloader.loading
+      -for(var i = 0; i < 4; i++)
+        span.slice
+
   .scroll(block="scrollable")
     -for(var i = 0; i < 11; i++)
       div(elem="wrap")
