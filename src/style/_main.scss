@@ -1,5 +1,7 @@
 body{
   font-family: $open-sans;
   font-weight: 800;
+  overflow-y: scroll;
+  -webkit-font-smoothing: subpixel-antialiased;
+  overflow-x: auto;
 }
-
