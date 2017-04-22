@@ -24,11 +24,35 @@
 
   &__social-link{
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
+    position: relative;
 
     &:hover{
-      color: #000;
+      color: $main-color;
+      text-decoration: none;
+      &:before{
+        display: block;
+      }
     }
+
+    &:before{
+      display: none;
+      position: absolute;
+      content: '';
+      height: 5px;
+      background: $additional-yellow-color;
+      left: -2px;
+      right: -2px;
+      bottom: 6px;
+      z-index: -1;
+    }
+  }
+
+  &__copyright{
+    font-family: $roboto;
+    font-size: 14px;
+    //text-align: right;
+    color: #000;
   }
 }
