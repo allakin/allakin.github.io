@@ -21,7 +21,7 @@ const source = [
   // './node_modules/bootstrap-only-css/lib/jumbotron.css',
   // './node_modules/bootstrap-only-css/lib/labels.css',
   // './node_modules/bootstrap-only-css/lib/list-group.css',
-  // './node_modules/bootstrap-only-css/lib/media.css',
+  './node_modules/bootstrap-only-css/lib/media.css',
   // './node_modules/bootstrap-only-css/lib/modals.css',
   // './node_modules/bootstrap-only-css/lib/navs.css',
   './node_modules/bootstrap-only-css/lib/normalize.css',

@@ -1,0 +1,16 @@
+div(block="menu")
+  div(elem="top")
+    span(elem="label") меню
+    span(elem="close").cur закрыть
+
+  .transform-middle(elem="middle")
+    .media(elem="media")
+      .media-body.media-middle(elem="media-body")
+        ul(elem="list-items").lsn.mb0.pl0
+          each val, key in menu
+            li(elem="list-item" class="#{key == 0 ? 'active' : ''}")
+              a(href="#{val.url}" elem="list-link").cur #{val.label}
+
+      .media-left.media-middle(elem="media-left")
+        div(elem="icon-wrap")
+          img(src="img/menu-icon.svg", alt="menu icon" elem="image-icon")
