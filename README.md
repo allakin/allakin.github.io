@@ -39,3 +39,7 @@
 ### Mind maps
 
 - [Структура сайта](https://coggle.it/diagram/WOn5zSPVCgABmm6S/1a5a8c971462316888e17e67d967445ec958e0b38a103697e3cdca63601c90da)
+
+### Zeplin project
+
+- [https://app.zeplin.io/project/58fa63721235c5e69cbd4b90](https://app.zeplin.io/project/58fa63721235c5e69cbd4b90)
