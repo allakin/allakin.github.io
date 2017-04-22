@@ -10,3 +10,8 @@ dl, ol, ul {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+::selection {
+  background: $main-color;
+  color: #fff;
+}
