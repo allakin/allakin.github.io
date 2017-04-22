@@ -38,7 +38,7 @@ const source = [
   // './node_modules/bootstrap-only-css/lib/thumbnails.css',
   // './node_modules/bootstrap-only-css/lib/tooltip.css',
   // './node_modules/bootstrap-only-css/lib/type.css',
-  // './node_modules/bootstrap-only-css/lib/utilities.css',
+  './node_modules/bootstrap-only-css/lib/utilities.css',
   // './node_modules/bootstrap-only-css/lib/wells.css',
 
   // './node_modules/css.modifiers/lib/box-sizing.css',
