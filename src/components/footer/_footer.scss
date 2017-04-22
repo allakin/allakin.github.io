@@ -24,8 +24,8 @@
 
   &__social-link{
     color: #000;
-    font-size: 14px;
-    font-weight: 700;
+    // font-size: 14px;
+    // font-weight: 700;
     position: relative;
 
     &:hover{
@@ -50,9 +50,8 @@
   }
 
   &__copyright{
-    font-family: $roboto;
-    font-size: 14px;
+    // font-size: 14px;
     //text-align: right;
-    color: #000;
+    // color: #000;
   }
 }

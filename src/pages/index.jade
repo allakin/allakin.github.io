@@ -12,9 +12,13 @@ block content
         div(elem="block")
           div(elem="inner-wrap")
             a(href="#" elem="label").cur.no-underline
-              span.transform-middle  Lorem ipsum dolor sit amet.
+              span.transform-middle  #{randomText()}
+
+            ul(elem="tags-list").lsn.pl0.mb0
+              -for(var w = 0; w < randomInt(4, 1); w++)
+                li(elem="tags-item") #{randomTag()}
 
             span(elem="time") /#{i < 9 ? '0' + (i + 1) : i + 1}
 
             a(href="#" elem="image-wrap").cur
-              img(src="/img/portfolio-mini-image.png", alt="portfolio mini image" elem="image")
+              img(src="#{randomImage(294, 220)}", alt="portfolio mini image" elem="image")

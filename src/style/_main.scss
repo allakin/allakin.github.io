@@ -4,6 +4,8 @@ body{
   overflow-y: scroll;
   //-webkit-font-smoothing: subpixel-antialiased;
   overflow-x: auto;
+  color: #000;
+  font-size: 14px;
 }
 
 dl, ol, ul {
@@ -14,4 +16,9 @@ dl, ol, ul {
 ::selection {
   background: $main-color;
   color: #fff;
+}
+
+.roboto{
+  font-family: $roboto;
+  font-weight: 400;
 }

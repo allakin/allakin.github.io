@@ -6,6 +6,13 @@ const targetEl = $('.scrollable');
 const blockEl = $('.scrollable__block');
 const wrapEl = $('.scrollable__wrap');
 
+const cardMargin = () => {
+  if ($(window).height() > 1000) return 150;
+  if ($(window).height() > 768) return 100;
+
+  return 40;
+};
+
 targetEl.css({
   width: (blockEl.length * blockWidth) + wrapPaddingLeft + wrapPaddingRight,
 });
@@ -22,7 +29,7 @@ blockEl.css({
 });
 
 wrapEl.css({
-  height: (blockHeight * 2) + 20,
+  height: (blockHeight * 2) + cardMargin(),
 });
 
 $.jInvertScroll(['.scrollable']);
