@@ -1,37 +1,95 @@
-$colors: #EF4F80, #DDF34B, #97EE4F, #BC46CB;
+$colors: $main-color, $additional-yellow-color, $accent-color, $additional-purple-color;
 $block-width: 30px;
+$prim: #2ba0c7;
 
-.preloader-overlay{
-	position: fixed;
-	background: #fff;
-	z-index: 100;
-	width: 100%;
-	height: 100%;
+.preloader-overlay {
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
 }
 
-.preloader{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: $block-width * 2;
-	height: $block-width * 2;
-	margin-top: -$block-width;
-	margin-left: -$block-width;
+.preloader {
+  width: $block-width * 2;
+  height: $block-width * 2;
+  /* margin: 0 auto;*//* margin-top: 50px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -$block-width / 2;
+  margin-left: -$block-width / 2;
 
-	.slice{
-		width: $block-width;
-		height: $block-width;
-		display: block;
-		// background: #ff0000;
-		// position: absolute;
-		float: left;
-	}
+  .cube {
+    position: relative;
+    transform: rotateZ(45deg);
+  }
 
-	@for $i from 1 through 4 {
-		.slice:nth-child(#{$i}) {
-			background-color: nth($colors, $i);
-			// transform: rotateZ(60* $i + deg) rotateY(0deg) rotateX(0);
-			// animation: .15s linear .9 - $i*.08s preload-hide-#{$i} both 1;
-		}
-	}
+  .cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+  }
+
+  @for $i from 1 through 4 {
+    .cube:nth-child(#{$i}) {
+      &:before {
+        background-color: nth($colors, $i);
+      }
+    }
+  }
+
+  .cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: foldthecube 2.4s infinite linear both;
+    transform-origin: 100% 100%;
+  }
+
+  .c2 {
+    transform: scale(1.1) rotateZ(90deg);
+  }
+
+  .c3 {
+    transform: scale(1.1) rotateZ(180deg);
+  }
+
+  .c4 {
+    transform: scale(1.1) rotateZ(270deg);
+  }
+
+  .c2:before {
+    animation-delay: .3s;
+  }
+
+  .c3:before {
+    animation-delay: .6s;
+  }
+
+  .c4:before {
+    animation-delay: .9s;
+  }
+
+  @keyframes foldthecube {
+    0%, 10% {
+      transform: perspective(140px) rotateX(-180deg);
+      opacity: 0;
+    }
+
+    25%, 75% {
+      transform: perspective(140px) rotateX(0deg);
+      opacity: 1;
+    }
+
+    90%, 100% {
+      transform: perspective(140px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
 }

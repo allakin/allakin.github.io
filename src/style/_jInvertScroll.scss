@@ -111,7 +111,7 @@ body{
   &__tags-item{
     border-bottom: 2px #000 solid;
     width: 160px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     text-align: right;
     // padding-bottom: 3px;
 
@@ -121,6 +121,10 @@ body{
     font-size: 15px;
     // font-weight: 800;
     line-height: 1.67;
-    color: #000000;
+    // color: #000000;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }

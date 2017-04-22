@@ -2,9 +2,11 @@ extends ../layouts/_index-layout
 
 block content
   .preloader-overlay
-    .preloader.loading
-      -for(var i = 0; i < 4; i++)
-        span.slice
+    .preloader
+      div.cube.c1
+      div.cube.c2
+      div.cube.c4
+      div.cube.c3
 
   .scroll(block="scrollable")
     -for(var i = 0; i < 20; i++)
