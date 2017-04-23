@@ -13,6 +13,7 @@ gulp.task('scripts', () =>
     .pipe($.if(isProd, $.uglify()))
 
     .pipe($.addSrc('./node_modules/jquery/dist/jquery.min.js'))
+    .pipe($.addSrc('./node_modules/hammerjs/hammer.min.js'))
 
     .pipe(gulp.dest(config.dest.scripts))
     .on('end', bs.reload)

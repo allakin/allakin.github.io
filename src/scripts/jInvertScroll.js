@@ -32,4 +32,6 @@ wrapEl.css({
   height: (blockHeight * 2) + cardMargin(),
 });
 
-$.jInvertScroll(['.scrollable']);
+if (!isMobile.any) {
+  $.jInvertScroll(['.scrollable']);
+}

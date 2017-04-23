@@ -1,5 +1,8 @@
 - function randomInt(max, min) { return Math.floor(Math.random() * (max - min + 1)) + min; };
-- function randomImage(width, height) { return 'https://unsplash.it/'+ width +'/'+ height +'/?random=' + randomInt(1000, 1); };
+if DEV
+  - function randomImage(width, height) { return 'http://placehold.it/'+ width +'x'+ height; };
+if PROD
+  - function randomImage(width, height) { return 'https://unsplash.it/'+ width +'/'+ height +'/?random=' + randomInt(1000, 1); };
 - function randomText() { return text[randomInt(text.length-1, 0)]; };
 - function randomTag() { return tags[randomInt(tags.length-1, 0)]; };
 
@@ -44,6 +47,9 @@ html(lang="ru")
     //- подключаем файл со стилями
     link(href="css/style.css", rel="stylesheet")
 
+    if DEV
+      link(href="css/dev-style.css", rel="stylesheet")
+
     |<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     |<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     |<!--[if lt IE 9]>
@@ -55,6 +61,9 @@ html(lang="ru")
     block header_script
 
   body
+    if DEV
+      .console
+
     block header
       include ../components/header/_header.jade
 
@@ -77,6 +86,8 @@ html(lang="ru")
     if PROD
       script(extsrc="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
     script(extsrc="js/jquery.jInvertScroll.min.js")
+    script(extsrc="js/isMobile.min.js")
+    script(extsrc="js/hammer.min.js")
 
     block script
 
