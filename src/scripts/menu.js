@@ -111,5 +111,7 @@ function layerInit() {
 $('.menu__list-link').hover((event) => {
   let color = $(event.target).data('color');
   if (!color) color = '#000';
-  $('#menu-icon').velocity("stop").velocity({ fill: color }, 500);
+  $('#menu-icon').velocity('stop').velocity({ fill: color }, 500);
+}, () => {
+  $('#menu-icon').velocity('stop').velocity({ fill: '#000' }, 500);
 });
