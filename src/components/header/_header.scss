@@ -20,11 +20,21 @@
   }
 
   &__menu-button{
-    background-image: url(../img/combined-shape.svg);
-    width: 27px;
-    height: 21px;
+    // background-image: url(../img/combined-shape.svg);
+    // width: 27px;
+    // height: 21px;
 
+    padding: 0;
     border: none;
     background-color: transparent;
+
+    &:hover{
+      background-color: $additional-yellow-color;
+    }
+
+    svg{
+      vertical-align: middle;
+      line-height: 21;
+    }
   }
 }

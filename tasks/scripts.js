@@ -12,8 +12,11 @@ gulp.task('scripts', () =>
     .pipe($.concat('main.js'))
     .pipe($.if(isProd, $.uglify()))
 
+    // add pugins
     .pipe($.addSrc('./node_modules/jquery/dist/jquery.min.js'))
     .pipe($.addSrc('./node_modules/hammerjs/hammer.min.js'))
+    .pipe($.addSrc('./node_modules/velocity-animate/velocity.min.js'))
+    .pipe($.addSrc('./node_modules/velocity-animate/velocity.ui.min.js'))
 
     .pipe(gulp.dest(config.dest.scripts))
     .on('end', bs.reload)

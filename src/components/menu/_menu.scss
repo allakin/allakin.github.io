@@ -1,13 +1,13 @@
 .menu{
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   right: 0;
   bottom: 0;
   z-index: 10;
   background-color: #97ee4f;
-  height: 100vh;
-  display: none;
+  // height: 100vh;
+  // display: none;
 
   @media(min-width: 1600px){
     padding-left: 160px + 200px;
@@ -21,16 +21,18 @@
 
   &__close{
     color: $main-color;
-    background-image: url(../img/close.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
 
     padding-right: 22px + 9px;
     font-size: 16px;
 
     position: absolute;
     top: 36px;
-    right: 38px;
+    // right: 38px;
+    right: 0px;
+
+    svg{
+      vertical-align: middle;
+    }
   }
 
   &__label{
@@ -101,12 +103,80 @@
     height: 410px;
     // background: #ff0000;
     // border: 10px #000 solid;
+
+    > * {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.cd-primary-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 80px 5%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+
+  &.fade-in {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.cd-overlay-nav, .cd-overlay-content {
+  position: fixed;
+  top: 18px;
+  right: 5%;
+  height: 4px;
+  width: 4px;
+  transform: translateX(-20px) translateY(20px);
+  // z-index: 20;
+
+  // right: auto;
+  // left: 50%;
+  // top: 50%;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+
+    background-color: $accent-color;
   }
 
-  &__image-icon{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s 0s, visibility 0s .3s;
+  }
+}
+
+.cd-overlay-nav {
+  z-index: 2;
+
+  span {
+    background-color: $accent-color;
+  }
+}
+
+.cd-overlay-content  {
+  z-index: 11;
+
+  span {
+    background-color: #fff;
+    // z-index: 23;
   }
 }
