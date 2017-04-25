@@ -1,12 +1,13 @@
 extends ../layouts/_index-layout
 
 block content
-  .preloader-overlay
-    .preloader
-      div.cube.c1
-      div.cube.c2
-      div.cube.c4
-      div.cube.c3
+  if PROD
+    .preloader-overlay
+      .preloader
+        div.cube.c1
+        div.cube.c2
+        div.cube.c4
+        div.cube.c3
 
   .scroll(block="scrollable")#scrollable
     -for(var i = 0; i < 20; i++)
