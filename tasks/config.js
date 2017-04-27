@@ -92,9 +92,10 @@ export const config = {
     require('autoprefixer')({ browsers: AUTOPREFIXER_CONFIG }),
     require('css-mqpacker'),
     require('postcss-discard-comments')({ removeAll: true }),
+    require('postcss-csso'),
   ],
 
-  PROCESSORS_PERFECTIONIST: [
+  PERFECTIONIST: [
     require('perfectionist'),
   ],
 
