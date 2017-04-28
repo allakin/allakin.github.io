@@ -17,6 +17,7 @@ gulp.task('scripts', () =>
     .pipe($.addSrc('./node_modules/hammerjs/hammer.min.js'))
     .pipe($.addSrc('./node_modules/velocity-animate/velocity.min.js'))
     .pipe($.addSrc('./node_modules/velocity-animate/velocity.ui.min.js'))
+    .pipe($.addSrc('./node_modules/show-js-error/dist/show-js-error.custom.js'))
 
     .pipe(gulp.dest(config.dest.scripts))
     .on('end', bs.reload)

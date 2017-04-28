@@ -49,6 +49,15 @@ html(lang="ru")
 
     if DEV
       link(href="css/dev-style.css", rel="stylesheet")
+      link(rel='stylesheet', href='css/show-js-error.css')
+      script(src='js/show-js-error.custom.js')
+      script.
+        showJSError.init({
+          title: 'JavaScript error',
+          userAgent: navigator.userAgent,
+          sendText: 'Send Bug',
+          sendUrl: 'https://github.com/allakin/allakin.github.io/issues/new?title={title}&body={body}'
+        });
 
     |<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     |<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

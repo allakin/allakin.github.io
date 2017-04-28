@@ -64,6 +64,7 @@
     "posthtml-bem": "^0.2.2",
     "require-dir": "^0.3.1",
     "sass": "^0.5.0",
+    "show-js-error": "^1.10.0",
     "velocity-animate": "^1.5.0"
   }
 }
