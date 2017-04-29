@@ -1,0 +1,42 @@
+.welcome-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // display: none;
+
+  z-index: 20;
+
+  &__cube{
+    // position: absolute;
+    width: 50%;
+    height: 50%;
+    float: left;
+  }
+
+  @for $i from 1 through 4 {
+    &__cube:nth-child(#{$i}) {
+      background-color: nth($colors-stack, $i);
+    }
+  }
+
+  &__text-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 59px;
+    background: #fff;
+    // height: 176px;
+  }
+
+  &__text{
+    font-size: 100px;
+    line-height: 65px;
+    text-transform: uppercase;
+    line-height: 176px;
+    margin: 0;
+    padding: 0;
+  }
+}

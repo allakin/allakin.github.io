@@ -5,3 +5,5 @@ $main-color: #EF4F80;
 $accent-color: #97EE4F;
 $additional-purple-color: #BC46CB;
 $additional-yellow-color: #DDF34B;
+
+$colors-stack: $main-color, $additional-yellow-color, $accent-color, $additional-purple-color;

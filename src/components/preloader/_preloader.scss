@@ -1,4 +1,3 @@
-$colors: $main-color, $additional-yellow-color, $accent-color, $additional-purple-color;
 $block-width: 30px;
 $prim: #2ba0c7;
 
@@ -46,7 +45,7 @@ $prim: #2ba0c7;
   @for $i from 1 through 4 {
     .cube:nth-child(#{$i}) {
       &:before {
-        background-color: nth($colors, $i);
+        background-color: nth($colors-stack, $i);
       }
     }
   }

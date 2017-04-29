@@ -1,6 +1,9 @@
 // скрываем прелоадер при загрузки страницы
 $(window).on('load', () => {
-  $('.preloader-overlay')
-    .delay(450)
-    .fadeOut('slow');
+  $('.preloader-overlay').velocity('fadeOut', {
+    delay: 600,
+    complete() {
+      $('.welcome-screen').velocity('fadeOut', { delay: 500 });
+    },
+  });
 });

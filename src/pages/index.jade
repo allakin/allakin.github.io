@@ -1,13 +1,8 @@
 extends ../layouts/_index-layout
 
 block content
-  if PROD
-    .preloader-overlay
-      .preloader
-        div.cube.c1
-        div.cube.c2
-        div.cube.c4
-        div.cube.c3
+  include ../components/preloader/_preloader
+  include ../components/welcome-screen/_welcome-screen
 
   .scroll(block="scrollable")#scrollable
     -for(var i = 0; i < 20; i++)
@@ -21,7 +16,7 @@ block content
               -for(var w = 0; w < randomInt(4, 1); w++)
                 li(elem="tags-item") #{randomTag()}
 
-            span(elem="time") /#{i < 9 ? '0' + (i + 1) : i + 1}
+            span(elem="time") /#{addZeroToNumber(i)}
 
             a(href="#" elem="image-wrap").cur
               img(src="#{randomImage(294, 220)}", alt="portfolio mini image" elem="image")
