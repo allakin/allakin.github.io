@@ -14,17 +14,17 @@ const data = {
       color: '#BC46CB',
     },
     {
-      url: '/',
+      url: '/sketch.html',
       label: 'Наброски',
       color: '#EF4F80',
     },
     {
-      url: '/',
+      url: '/blog.html',
       label: 'Блог',
       color: '#DDF34B',
     },
     {
-      url: '/',
+      url: '/about.html',
       label: 'Обо мне',
       color: '#fff',
     },

@@ -1,4 +1,4 @@
-extends ../layouts/_index-layout
+extends ../layouts/_main
 
 block header
   include ../components/header/_header.jade
@@ -20,7 +20,7 @@ block content
               -for(var w = 0; w < randomInt(4, 1); w++)
                 li(elem="tags-item") #{randomTag()}
 
-            span(elem="time") /#{addZeroToNumber(i)}
+            span(elem="time") /#{addZeroToNumber(i + 1)}
 
             a(href="/post.html" elem="image-wrap").cur
               img(src="#{randomImage(294, 220)}", alt="portfolio mini image" elem="image")

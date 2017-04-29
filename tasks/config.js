@@ -39,7 +39,7 @@ export const config = {
     jade: './src/pages/!(_)*.jade',
     layouts: './src/layouts/*.jade',
     components: './src/components/**/*.jade',
-    dataJson: './src/data/data.json',
+    data: './src/data/**/*.js',
     scripts: [
       './src/scripts/main.js',
       './src/components/**/*.js',

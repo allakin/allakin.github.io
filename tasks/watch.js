@@ -15,6 +15,7 @@ gulp.task('watch', (cb) => {
   ], gulp.parallel('style'));
 
   gulp.watch([
+    config.src.data,
     config.src.jade,
     config.src.layouts,
     config.src.components,
