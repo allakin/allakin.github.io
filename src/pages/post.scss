@@ -3,6 +3,7 @@
     height: 100vh;
     background-position: top center;
     background-size: cover;
+    margin-bottom: 100px;
   }
 
   &__middle{
@@ -18,9 +19,30 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
   }
 
   &__time{
     font-size: 20px;
+  }
+
+  &__back-link{
+    margin-bottom: 38px;
+    display: inline-block;
+    svg{
+      vertical-align: middle;
+    }
+  }
+
+  &__back-text{
+    margin-left: 14px;
+    font-size: 16px;
+    color: #ef4f80;
+    vertical-align: middle;
+  }
+
+  &__content{
+    font-size: 20px;
+    font-family: $roboto;
   }
 }

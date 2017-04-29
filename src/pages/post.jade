@@ -4,5 +4,27 @@ block content
   div(block="post")
     div(elem="cover" style="background-image: url(#{randomImage(1920, 1080)})")
       .transform-middle(elem="middle")
+        a(href="/" elem="back-link").no-underline
+          include ../components/icons/back-icon.jade
+          span(elem="back-text") Вернуться к работам
         h1(elem="title") #{randomText()}
         span(elem="time").roboto 01/01/2017
+
+    div(elem="content")
+      .container(elem="container")
+        h2.text-uppercase headline
+
+      .container(elem="container")
+        .row(elem="row")
+          .col-xs-6(elem="col")
+            p.roboto Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          .col-xs-6(elem="col")
+            img(src="#{randomImage(459, 270)}", alt="")
+
+      .container(elem="container")
+        img(src="#{randomImage(544, 384)}", alt="")
+
+      .container(elem="container")
+        .col-xs-6.col-xs-offset-3(elem="col")
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

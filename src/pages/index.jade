@@ -1,5 +1,9 @@
 extends ../layouts/_index-layout
 
+block header
+  include ../components/header/_header.jade
+  include ../components/menu/_menu.jade
+
 block content
   include ../components/preloader/_preloader
   include ../components/welcome-screen/_welcome-screen
@@ -20,3 +24,6 @@ block content
 
             a(href="/post.html" elem="image-wrap").cur
               img(src="#{randomImage(294, 220)}", alt="portfolio mini image" elem="image")
+
+block footer
+  include ../components/footer/_footer.jade
