@@ -23,16 +23,6 @@ export const errorLogFunc = $.notify.onError({
   title: 'Error running something',
 });
 
-// export function errorLogFunc(error) {
-//   console.error(`
-//     ----------ERROR MESSAGE START----------
-//     [${error.name} in ${error.plugin}]
-//     ${error.message}
-//     -----------ERROR MESSAGE END-----------
-//   `);
-//   this.end();
-// }
-
 export const config = {
   src: {
     style: './src/style/**/style.scss',
@@ -41,7 +31,7 @@ export const config = {
     components: './src/components/**/*.jade',
     data: './src/data/**/*.js',
     scripts: [
-      './src/scripts/main.js',
+      './src/scripts/!(_)*.js',
       './src/components/**/*.js',
     ],
     images: [

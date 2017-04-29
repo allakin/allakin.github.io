@@ -9,7 +9,7 @@ gulp.task('scripts', () =>
     .pipe($.babel(config.babel))
       .on('error', errorLogFunc)
 
-    .pipe($.concat('main.js'))
+    // .pipe($.concat('main.js'))
     .pipe($.if(isProd, $.uglify()))
 
     // add pugins
