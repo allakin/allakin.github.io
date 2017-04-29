@@ -1,0 +1,26 @@
+.post{
+  &__cover{
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &__middle{
+    max-width: 960px;
+    margin: 0 auto;
+    // padding: 1px;
+  }
+
+  &__title{
+    font-size: 60px;
+    line-height: 70px;
+    max-height: 220px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__time{
+    font-size: 20px;
+  }
+}

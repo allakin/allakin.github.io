@@ -1,0 +1,8 @@
+extends ../layouts/_index-layout
+
+block content
+  div(block="post")
+    div(elem="cover" style="background-image: url(#{randomImage(1920, 1080)})")
+      .transform-middle(elem="middle")
+        h1(elem="title") #{randomText()}
+        span(elem="time").roboto 01/01/2017

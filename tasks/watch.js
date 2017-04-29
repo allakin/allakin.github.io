@@ -11,6 +11,7 @@ gulp.task('watch', (cb) => {
   gulp.watch([
     './src/style/**/*.scss',
     './src/components/**/*.scss',
+    './src/pages/**/*.scss',
   ], gulp.parallel('style'));
 
   gulp.watch([
