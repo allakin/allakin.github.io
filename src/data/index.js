@@ -29,6 +29,20 @@ const data = {
       color: '#fff',
     },
   ],
+  footerLinks: [
+    {
+      url: 'https://www.behance.net/allakin',
+      label: 'Behance',
+    },
+    {
+      url: 'https://dribbble.com/allakin',
+      label: 'Dribbble',
+    },
+    {
+      url: 'https://www.facebook.com/anpleenkopavel',
+      label: 'Facebook',
+    },
+  ],
 };
 
 export default data;

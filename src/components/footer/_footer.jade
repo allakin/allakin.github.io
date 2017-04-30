@@ -1,13 +1,8 @@
 footer(block="footer").clearfix
   ul(elem="social").lsn.clearfix.pl0.pull-left.mb0
-    li(elem="social-item").pull-left
-      a(elem="social-link" href="https://www.behance.net/allakin").cur Behance
-
-    li(elem="social-item").pull-left
-      a(elem="social-link" href="https://dribbble.com/allakin").cur Dribbble
-
-    li(elem="social-item").pull-left
-      a(elem="social-link" href="https://www.facebook.com/anpleenkopavel").cur Facebook
+    each val, key in footerLinks
+      li(elem="social-item").pull-left
+        a(elem="social-link" href="#{val.url}").cur #{val.label}
 
   div(elem="copyright").pull-right.roboto
     | copyright&nbsp;
