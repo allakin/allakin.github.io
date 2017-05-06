@@ -1,9 +1,28 @@
 // скрываем прелоадер при загрузки страницы
+const welcomeScreen = $('.welcome-screen');
+const welcomeScreenText = $('.welcome-screen__text');
+const welcomeScreenTCube = $('.welcome-screen__cube');
+const welcomeScreenTextWidth = welcomeScreenText.outerWidth();
+const fadeinBlock = $('.welcome-screen__text-wrap_fade--in');
+
 $(window).on('load', () => {
   $('.preloader-overlay').velocity('fadeOut', {
     delay: 600,
     complete() {
-      $('.welcome-screen').velocity('fadeOut', { delay: 500 });
+      welcomeScreenTCube
+        .addClass('show');
+
+      fadeinBlock
+        .delay(1500)
+        .css({ width: welcomeScreenTextWidth })
+        .addClass('show');
+
+      welcomeScreenText
+        .delay(2000)
+        .addClass('active');
+
+      welcomeScreen
+        .velocity('fadeOut', { delay: 3000 });
     },
   });
 });
