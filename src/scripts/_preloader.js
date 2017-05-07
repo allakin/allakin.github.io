@@ -4,6 +4,7 @@ const welcomeScreenText = $('.welcome-screen__text');
 const welcomeScreenTCube = $('.welcome-screen__cube');
 const welcomeScreenTextWidth = welcomeScreenText.outerWidth();
 const fadeinBlock = $('.welcome-screen__text-wrap_fade--in');
+const scrollableBlock = $('.scrollable__block');
 
 $(window).on('load', () => {
   $('.preloader-overlay').velocity('fadeOut', {
@@ -22,7 +23,19 @@ $(window).on('load', () => {
         .addClass('active');
 
       welcomeScreen
-        .velocity('fadeOut', { delay: 3000 });
+        .velocity('fadeOut', {
+          delay: 3000,
+
+          complete() {
+            scrollableBlock
+              .addClass('fadeInLeft')
+              .delay(1000)
+              .css({
+                opacity: '',
+                transform: '',
+              })
+          }
+        });
     },
   });
 });
