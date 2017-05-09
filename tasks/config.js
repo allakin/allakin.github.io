@@ -27,6 +27,7 @@ export const config = {
   src: {
     style: './src/style/**/style.scss',
     jade: './src/pages/!(_)*.jade',
+    mixins: './src/mixins/!(_)*.jade',
     layouts: './src/layouts/*.jade',
     components: './src/components/**/*.jade',
     data: './src/data/**/*.js',
