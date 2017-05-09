@@ -1,0 +1,12 @@
+mixin header(data)
+  - data = data || {}
+
+  header(block="header")
+    if data.showLeftBlock
+      div(elem="page-title").pull-left
+        span Работы
+
+    if data.showRightBlock
+      div(elem="menu").pull-right
+        button(elem="menu-button").cur
+          include ../components/icons/menu-button-icon

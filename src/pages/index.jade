@@ -1,7 +1,7 @@
 extends ../layouts/_main
 
 block header
-  include ../components/header/_header.jade
+  +header({showLeftBlock: true, showRightBlock: true})
   include ../components/menu/_menu.jade
 
 block content
@@ -29,9 +29,9 @@ block footer
   include ../components/footer/_footer.jade
 
 block script
-  script(extsrc="js/jquery.jInvertScroll.min.js")
-  script(extsrc="js/hammer.min.js")
-  script(extsrc="js/velocity.min.js")
-  script(extsrc="js/velocity.ui.min.js")
-  script(extsrc="js/isMobile.min.js")
-  script(extsrc="js/indexPage.js")
+  +script('js/jquery.jInvertScroll.min.js')
+  +script('js/hammer.min.js')
+  +script('js/velocity.min.js')
+  +script('js/velocity.ui.min.js')
+  +script('js/isMobile.min.js')
+  +script('js/indexPage.js')

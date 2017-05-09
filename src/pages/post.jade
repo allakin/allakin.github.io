@@ -1,5 +1,9 @@
 extends ../layouts/_main
 
+block header
+  +header({showLeftBlock: false, showRightBlock: true})
+  include ../components/menu/_menu.jade
+
 block content
   div(block="post")
     div(elem="cover" style="background-image: url(#{randomImage(1920, 1080)})")
@@ -40,4 +44,4 @@ block content
         include ../components/icons/post-right-nav-arrow.jade
 
 block script
-  script(extsrc="js/postPage.js")
+  +script('js/postPage.js')
