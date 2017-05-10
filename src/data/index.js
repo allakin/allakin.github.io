@@ -11,22 +11,22 @@ const data = {
     {
       url: '/',
       label: 'Работы',
-      color: '#BC46CB',
+      id: 'works',
     },
     {
       url: '/sketch.html',
       label: 'Наброски',
-      color: '#EF4F80',
+      id: 'sketchs',
     },
     {
       url: '/blog.html',
       label: 'Блог',
-      color: '#DDF34B',
+      id: 'blog',
     },
     {
       url: '/about.html',
       label: 'Обо мне',
-      color: '#fff',
+      id: 'about-me',
     },
   ],
   footerLinks: [

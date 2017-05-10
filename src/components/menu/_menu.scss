@@ -104,9 +104,11 @@
   &__icon-wrap{
     width: 460px;
     height: 410px;
+    position: relative;
 
     > * {
-      position: relative;
+      max-height: 410px;
+      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -175,3 +177,17 @@
     background-color: #fff;
   }
 }
+
+#menu-icon-works,
+#menu-icon-blog,
+#menu-icon-about-me,
+#menu-icon-sketchs{
+  opacity: 0;
+  display: none;
+  // z-index: 1;
+}
+
+// #menu-icon-works{z-index: 2;}
+// #menu-icon-blog{z-index: 3;}
+// #menu-icon-about-me{z-index: 4;}
+// #menu-icon-sketchs{z-index: 5;}

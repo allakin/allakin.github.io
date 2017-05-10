@@ -4,7 +4,7 @@ mixin header(data)
   header(block="header")
     if data.showLeftBlock
       div(elem="page-title").pull-left
-        span Работы
+        span= data.pageTitle
 
     if data.showRightBlock
       div(elem="menu").pull-right

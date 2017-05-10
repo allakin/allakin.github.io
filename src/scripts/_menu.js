@@ -108,10 +108,48 @@ function layerInit() {
     );
 }
 
+let currentMenuItem = '';
+
+$('.menu__list-item').each((i, e) => {
+  if($(e).hasClass('active')) {
+    currentMenuItem = $(e).find('a').data('id');
+  }
+})
+
+// menu-icon-works
+// menu-icon-blog
+// menu-icon-about-me
+// menu-icon-sketchs
+
+$(`#menu-icon-${currentMenuItem}`)
+  // .velocity('stop')
+  .velocity({ opacity: 1 }, { display: "block" }, 500)
+
+// debugger;
+
 $('.menu__list-link').hover((event) => {
-  let color = $(event.target).data('color');
-  if (!color) color = '#000';
-  $('#menu-icon').velocity('stop').velocity({ fill: color }, 500);
-}, () => {
-  $('#menu-icon').velocity('stop').velocity({ fill: '#000' }, 500);
+  let hoverId = $(event.target).data('id');
+
+  if(currentMenuItem == hoverId) return false;
+
+  $(`#menu-icon-${currentMenuItem}`)
+    .velocity('stop')
+    .velocity({ opacity: 0 }, { display: "none" }, 500)
+
+  $(`#menu-icon-${hoverId}`)
+    .velocity('stop')
+    .velocity({ opacity: 1 }, { display: "block" }, 500)
+
+}, (event) => {
+  let hoverId = $(event.target).data('id');
+
+  if(currentMenuItem == hoverId) return false;
+
+  $(`#menu-icon-${hoverId}`)
+    .velocity('stop')
+    .velocity({ opacity: 0 }, { display: "none" }, 500)
+
+  $(`#menu-icon-${currentMenuItem}`)
+    .velocity('stop')
+    .velocity({ opacity: 1 }, { display: "block" }, 500)
 });

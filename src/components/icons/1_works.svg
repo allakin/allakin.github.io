@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="menu-icon-works" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 355 268" enable-background="new 0 0 355 268" xml:space="preserve">
+<g>
+	<g>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="none" points="38,42 38,222 19,267 0,222 0,71 6,71 6,51 0,51 0,42 		"/>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" points="10,238 28,238 21,255 17,255 		"/>
+		<rect x="0" y="12" fill="#CF507D" width="38" height="24"/>
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="0,42 38,42 38,222 19,267 0,222 				"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_2_)">
+				<defs>
+					<rect id="SVGID_3_" x="-719" y="-226" width="1280" height="720"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				</clipPath>
+				<rect x="-5" y="37" clip-path="url(#SVGID_4_)" fill="#E2F25B" width="48" height="235"/>
+			</g>
+		</g>
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12v24h38V12H0z M32,30H6V18h26V30z"/>
+			<rect x="0" y="111" fill-rule="evenodd" clip-rule="evenodd" width="6" height="60"/>
+			<rect x="0" y="71" fill-rule="evenodd" clip-rule="evenodd" width="6" height="30"/>
+			<rect x="32" y="141" fill-rule="evenodd" clip-rule="evenodd" width="6" height="60"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M32,220.79L26,235H12l-6-14.21V181H0v41l19,45l19-45v-11h-6V220.79z M19,251.57
+				L14.54,241h8.92L19,251.57z"/>
+			<rect x="32" y="81" fill-rule="evenodd" clip-rule="evenodd" width="6" height="50"/>
+			<rect x="32" y="52" fill-rule="evenodd" clip-rule="evenodd" width="6" height="19"/>
+			<polygon fill-rule="evenodd" clip-rule="evenodd" points="6,48 18,48 18,74 24,74 24,48 32,48 32,42 0,42 0,51 6,51 			"/>
+			<rect x="18" y="80" fill-rule="evenodd" clip-rule="evenodd" width="6" height="20"/>
+			<rect x="18" y="106" fill-rule="evenodd" clip-rule="evenodd" width="6" height="10"/>
+			<rect x="18" y="121" fill-rule="evenodd" clip-rule="evenodd" width="6" height="10"/>
+			<rect x="18" y="137" fill-rule="evenodd" clip-rule="evenodd" width="6" height="85"/>
+		</g>
+	</g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#DDF34B" d="M347,140v69.64c-3.82-3.51-8.91-5.64-14.5-5.64
+			c-5.12,0-9.81,1.79-13.5,4.78V140c0-7.73,0.51-20.25,1.14-27.96L328,16h10l7.86,96.04C346.49,119.75,347,132.27,347,140z"/>
+		<path fill="#CF507D" d="M313.654,235.857c-0.13-0.236-0.255-0.474-0.377-0.715c-0.191-0.354-0.3-0.54-0.3-0.54l0.011-0.059
+			c-1.276-2.749-1.988-5.812-1.988-9.042c0-11.874,9.626-21.5,21.5-21.5c10.792,0,19.727,7.952,21.266,18.316
+			c0.291,1.304,0.381,2.855,0.234,4.684c-2,25-42,36-42,36s8.066-8.655,6-16C316.545,241.828,314.649,237.792,313.654,235.857z"/>
+		<g>
+			<polygon points="333,28.47 334.03,41 340.05,41 338,16 328,16 323.91,66 329.93,66 			"/>
+			<polygon points="337.46,83 343.48,83 340.45,46 334.43,46 			"/>
+			<path d="M339.88,112.53c0.09,1.07,0.17,2.23,0.25,3.47h6.02c-0.1-1.41-0.19-2.75-0.29-3.96L344.46,95h-6.02L339.88,112.53z"/>
+			<polygon points="328.95,78 322.93,78 320.96,102 326.98,102 			"/>
+			<path d="M341,140v29h6v-29c0-3.87-0.13-8.93-0.34-14h-6C340.87,131.06,341,136.15,341,140z"/>
+			<path d="M325,140c0-7.57,0.5-19.92,1.12-27.47l0.37-4.53h-6.02l-0.33,4.04c-0.63,7.71-1.14,20.23-1.14,27.96v12h6V140z"/>
+			<rect x="319" y="161" width="6" height="21"/>
+			<path d="M353.77,222.32c-0.74-5-3.21-9.43-6.77-12.68V189h-6v16.74c-2.6-1.12-5.48-1.74-8.5-1.74c-2.64,0-5.17,0.48-7.5,1.35V189
+				h-6v19.78c-4.88,3.93-8,9.96-8,16.72c0,3.23,0.71,6.29,1.99,9.04l-0.01,0.06c0,0,0.11,0.19,0.3,0.54
+				c0.12,0.24,0.24,0.48,0.37,0.72c1,1.93,2.9,5.97,4.35,11.14c2.07,7.35-6,16-6,16s40-11,42-36
+				C354.15,225.17,354.06,223.62,353.77,222.32z M348.02,226.52c-0.82,10.25-10.54,17.91-18.56,22.54
+				c-1.78,1.03-3.56,1.96-5.28,2.79c0.28-2.1,0.21-4.29-0.4-6.47c-1.6-5.68-3.69-10.12-4.79-12.27l-0.04-0.07l-0.04-0.08
+				c-0.09-0.17-0.18-0.34-0.27-0.51l-0.04-0.08l-0.04-0.07l-0.13-0.28c-0.95-2.05-1.43-4.24-1.43-6.52c0-3.58,1.22-6.88,3.26-9.5
+				c2.84-3.65,7.27-6,12.24-6c4.89,0,9.35,2.33,12.21,6c1.61,2.04,2.72,4.5,3.12,7.2l0.03,0.21l0.05,0.21
+				C348.02,224.14,348.14,225.05,348.02,226.52z"/>
+		</g>
+	</g>
+	<g>
+		<rect x="108" y="21" fill-rule="evenodd" clip-rule="evenodd" fill="#DDF34B" width="140" height="140"/>
+		<polygon fill="#CF507D" points="242,67.28 242,72.25 185.63,114.53 155.71,100.73 114,131.77 114,129.043 108,135.826 108,161
+			248,161 248,67.28 		"/>
+		<g>
+			<rect x="161" y="21" width="24" height="6"/>
+			<rect x="195" y="21" width="30" height="6"/>
+			<rect x="242" y="31" width="6" height="11"/>
+			<rect x="124" y="21" width="21" height="6"/>
+			<rect x="232" y="21" width="10" height="6"/>
+			<polygon points="114,27 114,21 108,21 108,47 114,47 			"/>
+			<path d="M242,72.25l-56.37,42.28l-29.92-13.8L114,131.77V125h-6v36h64.529l-52.697,101.003l5.319,2.775L175,169.236V265h6
+				v-95.764l49.848,95.543l5.32-2.775L183.471,161H248V62h-6V72.25z M242,155H114v-15.75l42.44-31.58l29.93,13.8L242,79.75V155z"/>
+			<rect x="108" y="94" width="6" height="23"/>
+			<rect x="108" y="57" width="6" height="20"/>
+			<rect x="143.113" y="123.661" transform="matrix(0.8 -0.6 0.6 0.8 -44.8878 116.6708)" width="18.871" height="4"/>
+			<rect x="136.565" y="141.306" transform="matrix(0.7999 -0.6002 0.6002 0.7999 -57.2408 114.9447)" width="14.352" height="4"/>
+			<rect x="215.786" y="138.207" transform="matrix(0.7999 -0.6001 0.6001 0.7999 -39.7268 161.2568)" width="12.374" height="4"/>
+			<rect x="218.434" y="106.697" transform="matrix(0.8 -0.6 0.6 0.8 -19.9633 157.5084)" width="15.655" height="4"/>
+			<rect x="193.076" y="131.443" transform="matrix(0.8 -0.6 0.6 0.8 -40.1336 146.4946)" width="13.162" height="4"/>
+			<rect x="166.454" y="136.65" transform="matrix(0.7999 -0.6002 0.6002 0.7999 -49.1824 129.8013)" width="7.187" height="4"/>
+			<path d="M140,60c0,3.309,2.691,6,6,6s6-2.691,6-6s-2.691-6-6-6S140,56.691,140,60z M148,60c0,1.103-0.897,2-2,2s-2-0.897-2-2
+				s0.897-2,2-2S148,58.897,148,60z"/>
+			<rect x="144" y="39" width="4" height="8"/>
+			<rect x="125" y="58" width="8" height="4"/>
+			<rect x="156.243" y="68.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.7354 133.053)" width="4" height="8"/>
+			<rect x="154.243" y="46.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 12.2355 126.0244)" width="8" height="4"/>
+			<rect x="130.243" y="70.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -11.7645 116.0833)" width="8" height="4"/>
+			<rect x="159" y="58" width="8" height="4"/>
+			<rect x="144" y="73" width="4" height="8"/>
+			<rect x="132.243" y="44.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 5.2054 109.0524)" width="4" height="8"/>
+		</g>
+		<g>
+			<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" points="163,6 175,6 175,21 181,21 181,6 193,6 193,0 163,0
+				"/>
+			<rect x="168" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+			<rect x="223" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+			<rect x="113" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="none" points="38,42 38,222 19,267 0,222 0,71 6,71 6,51 0,51 0,42 		"/>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" points="10,238 28,238 21,255 17,255 		"/>
+		<rect x="0" y="12" fill="#CF507D" width="38" height="24"/>
+		<g>
+			<defs>
+				<polygon id="SVGID_5_" points="0,42 38,42 38,222 19,267 0,222 				"/>
+			</defs>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_6_)">
+				<defs>
+					<rect id="SVGID_7_" x="-719" y="-226" width="1280" height="720"/>
+				</defs>
+				<clipPath id="SVGID_8_">
+					<use xlink:href="#SVGID_7_"  overflow="visible"/>
+				</clipPath>
+				<rect x="-5" y="37" clip-path="url(#SVGID_8_)" fill="#E2F25B" width="48" height="235"/>
+			</g>
+		</g>
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12v24h38V12H0z M32,30H6V18h26V30z"/>
+			<rect x="0" y="111" fill-rule="evenodd" clip-rule="evenodd" width="6" height="60"/>
+			<rect x="0" y="71" fill-rule="evenodd" clip-rule="evenodd" width="6" height="30"/>
+			<rect x="32" y="141" fill-rule="evenodd" clip-rule="evenodd" width="6" height="60"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M32,220.79L26,235H12l-6-14.21V181H0v41l19,45l19-45v-11h-6V220.79z M19,251.57
+				L14.54,241h8.92L19,251.57z"/>
+			<rect x="32" y="81" fill-rule="evenodd" clip-rule="evenodd" width="6" height="50"/>
+			<rect x="32" y="52" fill-rule="evenodd" clip-rule="evenodd" width="6" height="19"/>
+			<polygon fill-rule="evenodd" clip-rule="evenodd" points="6,48 18,48 18,74 24,74 24,48 32,48 32,42 0,42 0,51 6,51 			"/>
+			<rect x="18" y="80" fill-rule="evenodd" clip-rule="evenodd" width="6" height="20"/>
+			<rect x="18" y="106" fill-rule="evenodd" clip-rule="evenodd" width="6" height="10"/>
+			<rect x="18" y="121" fill-rule="evenodd" clip-rule="evenodd" width="6" height="10"/>
+			<rect x="18" y="137" fill-rule="evenodd" clip-rule="evenodd" width="6" height="85"/>
+		</g>
+	</g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#DDF34B" d="M347,140v69.64c-3.82-3.51-8.91-5.64-14.5-5.64
+			c-5.12,0-9.81,1.79-13.5,4.78V140c0-7.73,0.51-20.25,1.14-27.96L328,16h10l7.86,96.04C346.49,119.75,347,132.27,347,140z"/>
+		<path fill="#CF507D" d="M313.654,235.857c-0.13-0.236-0.255-0.474-0.377-0.715c-0.191-0.354-0.3-0.54-0.3-0.54l0.011-0.059
+			c-1.276-2.749-1.988-5.812-1.988-9.042c0-11.874,9.626-21.5,21.5-21.5c10.792,0,19.727,7.952,21.266,18.316
+			c0.291,1.304,0.381,2.855,0.234,4.684c-2,25-42,36-42,36s8.066-8.655,6-16C316.545,241.828,314.649,237.792,313.654,235.857z"/>
+		<g>
+			<polygon points="333,28.47 334.03,41 340.05,41 338,16 328,16 323.91,66 329.93,66 			"/>
+			<polygon points="337.46,83 343.48,83 340.45,46 334.43,46 			"/>
+			<path d="M339.88,112.53c0.09,1.07,0.17,2.23,0.25,3.47h6.02c-0.1-1.41-0.19-2.75-0.29-3.96L344.46,95h-6.02L339.88,112.53z"/>
+			<polygon points="328.95,78 322.93,78 320.96,102 326.98,102 			"/>
+			<path d="M341,140v29h6v-29c0-3.87-0.13-8.93-0.34-14h-6C340.87,131.06,341,136.15,341,140z"/>
+			<path d="M325,140c0-7.57,0.5-19.92,1.12-27.47l0.37-4.53h-6.02l-0.33,4.04c-0.63,7.71-1.14,20.23-1.14,27.96v12h6V140z"/>
+			<rect x="319" y="161" width="6" height="21"/>
+			<path d="M353.77,222.32c-0.74-5-3.21-9.43-6.77-12.68V189h-6v16.74c-2.6-1.12-5.48-1.74-8.5-1.74c-2.64,0-5.17,0.48-7.5,1.35V189
+				h-6v19.78c-4.88,3.93-8,9.96-8,16.72c0,3.23,0.71,6.29,1.99,9.04l-0.01,0.06c0,0,0.11,0.19,0.3,0.54
+				c0.12,0.24,0.24,0.48,0.37,0.72c1,1.93,2.9,5.97,4.35,11.14c2.07,7.35-6,16-6,16s40-11,42-36
+				C354.15,225.17,354.06,223.62,353.77,222.32z M348.02,226.52c-0.82,10.25-10.54,17.91-18.56,22.54
+				c-1.78,1.03-3.56,1.96-5.28,2.79c0.28-2.1,0.21-4.29-0.4-6.47c-1.6-5.68-3.69-10.12-4.79-12.27l-0.04-0.07l-0.04-0.08
+				c-0.09-0.17-0.18-0.34-0.27-0.51l-0.04-0.08l-0.04-0.07l-0.13-0.28c-0.95-2.05-1.43-4.24-1.43-6.52c0-3.58,1.22-6.88,3.26-9.5
+				c2.84-3.65,7.27-6,12.24-6c4.89,0,9.35,2.33,12.21,6c1.61,2.04,2.72,4.5,3.12,7.2l0.03,0.21l0.05,0.21
+				C348.02,224.14,348.14,225.05,348.02,226.52z"/>
+		</g>
+	</g>
+	<g>
+		<rect x="108" y="21" fill-rule="evenodd" clip-rule="evenodd" fill="#DDF34B" width="140" height="140"/>
+		<polygon fill="#CF507D" points="242,67.28 242,72.25 185.63,114.53 155.71,100.73 114,131.77 114,129.043 108,135.826 108,161
+			248,161 248,67.28 		"/>
+		<g>
+			<rect x="161" y="21" width="24" height="6"/>
+			<rect x="195" y="21" width="30" height="6"/>
+			<rect x="242" y="31" width="6" height="11"/>
+			<rect x="124" y="21" width="21" height="6"/>
+			<rect x="232" y="21" width="10" height="6"/>
+			<polygon points="114,27 114,21 108,21 108,47 114,47 			"/>
+			<path d="M242,72.25l-56.37,42.28l-29.92-13.8L114,131.77V125h-6v36h64.529l-52.697,101.003l5.319,2.775L175,169.236V265h6
+				v-95.764l49.848,95.543l5.32-2.775L183.471,161H248V62h-6V72.25z M242,155H114v-15.75l42.44-31.58l29.93,13.8L242,79.75V155z"/>
+			<rect x="108" y="94" width="6" height="23"/>
+			<rect x="108" y="57" width="6" height="20"/>
+			<rect x="143.113" y="123.661" transform="matrix(0.8 -0.6 0.6 0.8 -44.8878 116.6708)" width="18.871" height="4"/>
+			<rect x="136.565" y="141.306" transform="matrix(0.7999 -0.6002 0.6002 0.7999 -57.2408 114.9447)" width="14.352" height="4"/>
+			<rect x="215.786" y="138.207" transform="matrix(0.7999 -0.6001 0.6001 0.7999 -39.7268 161.2568)" width="12.374" height="4"/>
+			<rect x="218.434" y="106.697" transform="matrix(0.8 -0.6 0.6 0.8 -19.9633 157.5084)" width="15.655" height="4"/>
+			<rect x="193.076" y="131.443" transform="matrix(0.8 -0.6 0.6 0.8 -40.1336 146.4946)" width="13.162" height="4"/>
+			<rect x="166.454" y="136.65" transform="matrix(0.7999 -0.6002 0.6002 0.7999 -49.1824 129.8013)" width="7.187" height="4"/>
+			<path d="M140,60c0,3.309,2.691,6,6,6s6-2.691,6-6s-2.691-6-6-6S140,56.691,140,60z M148,60c0,1.103-0.897,2-2,2s-2-0.897-2-2
+				s0.897-2,2-2S148,58.897,148,60z"/>
+			<rect x="144" y="39" width="4" height="8"/>
+			<rect x="125" y="58" width="8" height="4"/>
+			<rect x="156.243" y="68.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.7354 133.053)" width="4" height="8"/>
+			<rect x="154.243" y="46.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 12.2355 126.0244)" width="8" height="4"/>
+			<rect x="130.243" y="70.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -11.7645 116.0833)" width="8" height="4"/>
+			<rect x="159" y="58" width="8" height="4"/>
+			<rect x="144" y="73" width="4" height="8"/>
+			<rect x="132.243" y="44.243" transform="matrix(0.7071 -0.7071 0.7071 0.7071 5.2054 109.0524)" width="4" height="8"/>
+		</g>
+		<g>
+			<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" points="163,6 175,6 175,21 181,21 181,6 193,6 193,0 163,0
+				"/>
+			<rect x="168" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+			<rect x="223" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+			<rect x="113" y="262" fill-rule="evenodd" clip-rule="evenodd" fill="#EF4F80" width="20" height="6"/>
+		</g>
+	</g>
+</g>
+</svg>

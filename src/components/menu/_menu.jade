@@ -16,8 +16,11 @@ div(block="menu").cd-primary-nav
         ul(elem="list-items").lsn.mb0.pl0
           each val, key in menu
             li(elem="list-item" class="#{key == 0 ? 'active' : ''}")
-              a(href="#{val.url}" elem="list-link" data-color="#{val.color}").cur #{val.label}
+              a(href="#{val.url}" elem="list-link" data-id="#{val.id}").cur #{val.label}
 
       .media-left.media-middle(elem="media-left")
         div(elem="icon-wrap")
-          include ../icons/menu-icon
+          include ../icons/1_works.svg
+          include ../icons/2_sketchs.svg
+          include ../icons/3_blog.svg
+          include ../icons/4_about_me.svg
