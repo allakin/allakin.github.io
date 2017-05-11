@@ -1,0 +1,47 @@
+extends ../layouts/_main
+
+block header
+  +header({showLeftBlock: false, showRightBlock: true})
+  include ../components/menu/_menu.jade
+
+block content
+  div(block="post")
+    div(elem="cover" style="background-image: url(#{randomImage(1920, 1080)})")
+      .transform-middle(elem="middle")
+        a(href="/" elem="back-link").no-underline
+          include ../components/icons/back-icon.jade
+          span(elem="back-text") Вернуться к работам
+        h1(elem="title") #{randomText()}
+        span(elem="time").roboto 01/01/2017
+
+    div(elem="headline")
+      .container(elem="container")
+        h2(elem="second-title").text-uppercase Headline
+
+    div(elem="content")
+      section.container(elem="section")
+        .row(elem="row")
+          .col-xs-6(elem="col")
+            p.roboto Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          .col-xs-6(elem="col")
+            img(src="#{randomImage(459, 270)}", alt="")
+
+      section.container(elem="section")
+        img(src="#{randomImage(544, 384)}", alt="").table-center
+
+      section.container(elem="section")
+        .col-xs-6.col-xs-offset-3(elem="col")
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    nav(elem="nav").clearfix
+      div(elem="nav-left")
+        include ../components/icons/post-left-nav-arrow.jade
+        span(elem="nav-left-text") Название максимально длинной работы которая имеет 2 строки
+
+      div(elem="nav-right")
+        span(elem="nav-right-text") Название максимально длинной работы которая имеет 2 строки
+        include ../components/icons/post-right-nav-arrow.jade
+
+block script
+  +script('js/postPage.js')

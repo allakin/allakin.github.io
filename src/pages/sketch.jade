@@ -6,12 +6,12 @@ block header
 
 block content
   include ../components/preloader/_preloader
-  include ../components/welcome-screen/_welcome-screen
+  //- include ../components/welcome-screen/_welcome-screen
 
   .scroll(block="scrollable")#scrollable
     -for(var i = 0; i < 20; i++)
       div(elem="wrap")
-        div(elem="block" data-link="/post.html" style="transform: translate3d(100%, 0, 0); opacity: 0;").animated
+        div(elem="block" data-link="/sketch-post.html" style="transform: translate3d(100%, 0, 0); opacity: 0;").animated
           div(elem="inner-wrap")
             a(elem="label").cur.no-underline
               span.transform-middle  #{randomText()}
@@ -34,4 +34,4 @@ block script
   +script('js/velocity.min.js')
   +script('js/velocity.ui.min.js')
   +script('js/isMobile.min.js')
-  +script('js/indexPage.js')
+  +script('js/sketchPage.js')
