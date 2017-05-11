@@ -48,6 +48,7 @@ export const config = {
     scripts: [
       './src/scripts/**/*.js',
       './src/components/**/*.js',
+      './src/mixins/**/*.js',
     ],
   },
 
