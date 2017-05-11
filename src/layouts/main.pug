@@ -1,14 +1,8 @@
-- function randomInt(max, min) { return Math.floor(Math.random() * (max - min + 1)) + min; };
-if DEV
-  - function randomImage(width, height) { return 'http://placehold.it/'+ width +'x'+ height; };
-if PROD
-  - function randomImage(width, height) { return 'https://unsplash.it/'+ width +'/'+ height +'/?random=' + randomInt(1000, 1); };
-- function randomText() { return text[randomInt(text.length-1, 0)]; };
-- function randomTag() { return tags[randomInt(tags.length-1, 0)]; };
+- var activeMenuPage = 'works'
 
-include ../mixins/header/header.jade
-include ../mixins/common.jade
-include ../mixins/favicon.jade
+include ../mixins/header/header.pug
+include ../mixins/common.pug
+include ../mixins/favicon.pug
 
 doctype html
 html(lang="ru")

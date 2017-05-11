@@ -14,8 +14,8 @@ start:
 init:
 	npm i
 
-jade:
-	./node_modules/.bin/gulp jade
+pug:
+	./node_modules/.bin/gulp pug
 
 zip:
 	./node_modules/.bin/gulp zip

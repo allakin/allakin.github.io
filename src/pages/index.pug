@@ -1,12 +1,12 @@
-extends ../layouts/_main
+extends ../layouts/main
 
 block header
   +header({showLeftBlock: true, showRightBlock: true, pageTitle: 'Работы'})
-  include ../components/menu/_menu.jade
+  include ../components/menu/menu.pug
 
 block content
-  include ../components/preloader/_preloader
-  include ../components/welcome-screen/_welcome-screen
+  include ../components/preloader/preloader.pug
+  include ../components/welcome-screen/welcome-screen.pug
 
   .scroll(block="scrollable")#scrollable
     -for(var i = 0; i < 20; i++)
@@ -14,7 +14,7 @@ block content
         div(elem="block" data-link="/post.html" style="transform: translate3d(100%, 0, 0); opacity: 0;").animated
           div(elem="inner-wrap")
             a(elem="label").cur.no-underline
-              span.transform-middle  #{randomText()}
+              span.transform-middle= randomText()
 
             ul(elem="tags-list").lsn.pl0.mb0
               -for(var w = 0; w < randomInt(4, 1); w++)
@@ -23,10 +23,10 @@ block content
             span(elem="time") /#{addZeroToNumber(i + 1)}
 
             a(elem="image-wrap").cur
-              img(src="#{randomImage(294, 220)}", alt="portfolio mini image" elem="image")
+              img(src=randomImage(294, 220), alt="portfolio mini image" elem="image")
 
 block footer
-  include ../components/footer/_footer.jade
+  include ../components/footer/footer.pug
 
 block script
   +script('js/jquery.jInvertScroll.min.js')

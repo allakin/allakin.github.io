@@ -33,8 +33,8 @@ $(window).on('load', () => {
               .css({
                 opacity: '',
                 transform: '',
-              })
-          }
+              });
+          },
         });
     },
   });

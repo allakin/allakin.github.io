@@ -14,9 +14,9 @@ const data = {
       id: 'works',
     },
     {
-      url: '/sketch.html',
+      url: '/sketches.html',
       label: 'Наброски',
-      id: 'sketchs',
+      id: 'sketches',
     },
     {
       url: '/blog.html',

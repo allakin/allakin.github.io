@@ -1,17 +1,17 @@
-extends ../layouts/_main
+extends ../layouts/main
 
 block header
   +header({showLeftBlock: false, showRightBlock: true})
-  include ../components/menu/_menu.jade
+  include ../components/menu/menu.pug
 
 block content
   div(block="post")
     div(elem="cover" style="background-image: url(#{randomImage(1920, 1080)})")
       .transform-middle(elem="middle")
         a(href="/" elem="back-link").no-underline
-          include ../components/icons/back-icon.jade
+          include ../includes/icons/icon-post-back.svg
           span(elem="back-text") Вернуться к работам
-        h1(elem="title") #{randomText()}
+        h1(elem="title")= randomText()
         span(elem="time").roboto 01/01/2017
 
     div(elem="headline")
@@ -36,12 +36,12 @@ block content
 
     nav(elem="nav").clearfix
       div(elem="nav-left")
-        include ../components/icons/post-left-nav-arrow.jade
+        include ../includes/icons/post-left-nav-arrow.pug
         span(elem="nav-left-text") Название максимально длинной работы которая имеет 2 строки
 
       div(elem="nav-right")
         span(elem="nav-right-text") Название максимально длинной работы которая имеет 2 строки
-        include ../components/icons/post-right-nav-arrow.jade
+        include ../includes/icons/post-right-nav-arrow.pug
 
 block script
   +script('js/postPage.js')

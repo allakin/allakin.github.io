@@ -8,19 +8,19 @@ div(block="menu").cd-primary-nav
     span(elem="label") меню
     div(elem="close").cur
       span(elem="close-text") закрыть
-      include ../icons/icon-close.svg
+      include ../../includes/icons/icon-close.svg
 
   .transform-middle(elem="middle")
     .media(elem="media")
       .media-body.media-middle(elem="media-body")
         ul(elem="list-items").lsn.mb0.pl0
           each val, key in menu
-            li(elem="list-item" class="#{key == 0 ? 'active' : ''}")
-              a(href="#{val.url}" elem="list-link" data-id="#{val.id}").cur #{val.label}
+            li(elem="list-item" class=getActive(activeMenuPage == val.id))
+              a(href=val.url elem="list-link" data-id=val.id).cur= val.label
 
       .media-left.media-middle(elem="media-left")
         div(elem="icon-wrap")
-          include ../icons/1_works.svg
-          include ../icons/2_sketchs.svg
-          include ../icons/3_blog.svg
-          include ../icons/4_about_me.svg
+          include ../../includes/icons/1_works.svg
+          include ../../includes/icons/2_sketches.svg
+          include ../../includes/icons/3_blog.svg
+          include ../../includes/icons/4_about_me.svg

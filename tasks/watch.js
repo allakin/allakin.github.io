@@ -5,22 +5,17 @@ import { config, $ } from './config';
 gulp.task('watch', (cb) => {
   gulp.watch(config.watch.scripts, gulp.parallel('scripts'));
   gulp.watch(config.src.images, gulp.parallel('images'));
-  gulp.watch(config.src.dataJson, gulp.parallel('jade'));
   gulp.watch(config.src.misc, gulp.parallel('misc'));
-
-  gulp.watch([
-    './src/style/**/*.scss',
-    './src/components/**/*.scss',
-    './src/pages/**/*.scss',
-  ], gulp.parallel('style'));
+  gulp.watch(config.watch.style, gulp.parallel('style'));
 
   gulp.watch([
     config.src.data,
-    config.src.jade,
+    config.src.pug,
     config.src.layouts,
     config.src.mixins,
     config.src.components,
-  ], gulp.parallel('jade'));
+    config.src.includes,
+  ], gulp.parallel('pug'));
 
   cb();
 });
@@ -37,7 +32,7 @@ gulp.task('zip', () =>
 
 gulp.task('build', gulp.series(
   'delete_dist',
-  'jade',
+  'pug',
   'style',
   'images',
   'misc',

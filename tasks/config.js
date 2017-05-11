@@ -26,10 +26,10 @@ export const errorLogFunc = $.notify.onError({
 export const config = {
   src: {
     style: './src/style/**/style.scss',
-    jade: './src/pages/!(_)*.jade',
-    mixins: './src/mixins/!(_)*.jade',
-    layouts: './src/layouts/*.jade',
-    components: './src/components/**/*.jade',
+    pug: './src/pages/!(_)*.pug',
+    mixins: './src/mixins/!(_)*.pug',
+    layouts: './src/layouts/*.pug',
+    components: './src/components/**/*.pug',
     data: './src/data/**/*.js',
     scripts: [
       './src/scripts/!(_)*.js',
@@ -41,6 +41,7 @@ export const config = {
       './src/components/**/*.jpg',
       './src/components/**/*.svg',
     ],
+    includes: './src/includes/**/*.*',
     misc: './src/misc/**',
   },
 
@@ -48,7 +49,13 @@ export const config = {
     scripts: [
       './src/scripts/**/*.js',
       './src/components/**/*.js',
+    ],
+
+    style: [
+      './src/style/**/*.scss',
+      './src/components/**/*.scss',
       './src/mixins/**/*.js',
+      './src/pages/**/*.scss',
     ],
   },
 
