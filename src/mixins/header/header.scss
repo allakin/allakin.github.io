@@ -25,7 +25,19 @@
     background-color: transparent;
 
     &:hover{
-      background-color: $additional-yellow-color;
+      .icon-hamburger__cube{
+        &:nth-child(1){
+          transform: translateY(-3px);
+        }
+
+        &:nth-child(2){
+        }
+
+        &:nth-child(3){
+          animation: cube-down .3s;
+          transform: translateY(3px);
+        }
+      }
     }
   }
 }

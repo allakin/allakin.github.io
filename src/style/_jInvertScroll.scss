@@ -43,6 +43,9 @@ body{
     // display: block;
     display: none;
 
+    // transition: all 0.3s ease;
+    // transition: 3s;
+
     position: absolute;
     top: 27px;
     left: 0px;
@@ -81,13 +84,9 @@ body{
   }
 
   &__time{
-    // width: 97px;
-    // height: 107px;
     opacity: 0.3;
     color: #97ee4f;
-    // font-family: "Open Sans";
     font-size: 60px;
-    // font-weight: 700;
     line-height: 60px;
     text-transform: uppercase;
 
@@ -102,6 +101,8 @@ body{
 
   &__image{
     display: block;
+    box-shadow: 0 0px 0px rgba(221, 243, 75, 0.53);
+    transition: all .3s ease;
   }
 
   &__tags-list{
