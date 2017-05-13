@@ -34,14 +34,7 @@ block content
         .col-xs-6.col-xs-offset-3(elem="col")
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    nav(elem="nav").clearfix
-      div(elem="nav-left")
-        include ../includes/icons/post-left-nav-arrow.pug
-        span(elem="nav-left-text") Название максимально длинной работы которая имеет 2 строки
-
-      div(elem="nav-right")
-        span(elem="nav-right-text") Название максимально длинной работы которая имеет 2 строки
-        include ../includes/icons/post-right-nav-arrow.pug
+      include ../components/post-nav/post-nav.pug
 
 block script
   +script('js/postPage.js')

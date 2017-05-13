@@ -57,48 +57,4 @@
   &__section{
     margin-bottom: 136px;
   }
-
-  &__nav{
-
-  }
-
-  &__nav-left,
-  &__nav-right{
-    background-color: $additional-yellow-color;
-    width: 50%;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  &__nav-left{
-    float: left;
-
-    &:hover{
-      background-color: $accent-color;
-    }
-  }
-
-  &__nav-right{
-    float: right;
-
-    &:hover{
-      background-color: $accent-color;
-    }
-  }
-
-  &__nav-left-text,
-  &__nav-right-text{
-    color: $main-color;
-    font-size: 25px;
-  }
-
-  &__nav-left-text{
-
-  }
-
-  &__nav-right-text{
-
-  }
 }

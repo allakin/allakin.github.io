@@ -1,0 +1,42 @@
+.post-nav{
+  &__nav-left,
+  &__nav-center,
+  &__nav-right{
+    // height: 140px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  &__nav-left,
+  &__nav-right{
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+
+  &__nav-left{
+    float: left;
+
+    &:hover{
+      background-color: $accent-color;
+    }
+  }
+
+  &__nav-center{
+    float: left;
+    padding: 49px 80px;
+
+    &:hover{
+      background-color: $accent-color;
+    }
+  }
+
+  &__nav-right{
+    float: left;
+
+    &:hover{
+      background-color: $accent-color;
+    }
+  }
+}
