@@ -27,7 +27,7 @@ export const config = {
   src: {
     style: './src/style/**/style.scss',
     pug: './src/pages/!(_)*.pug',
-    mixins: './src/mixins/!(_)*.pug',
+    mixins: './src/mixins/**/!(_)*.pug',
     layouts: './src/layouts/*.pug',
     components: './src/components/**/*.pug',
     data: './src/data/**/*.js',

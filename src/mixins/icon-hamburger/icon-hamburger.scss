@@ -1,0 +1,13 @@
+.icon-hamburger{
+  > * + * {
+    margin-top: 5px;
+  }
+
+  &__cube{
+    width: 32px;
+    height: 4px;
+    display: block;
+
+    background-color: $main-color;
+  }
+}
