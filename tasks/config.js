@@ -54,7 +54,7 @@ export const config = {
     style: [
       './src/style/**/*.scss',
       './src/components/**/*.scss',
-      './src/mixins/**/*.js',
+      './src/mixins/**/*.scss',
       './src/pages/**/*.scss',
     ],
   },
