@@ -1,6 +1,7 @@
 extends ../layouts/main
 
 block header
+  - var activeMenuPage = 'works'
   +header({showLeftBlock: true, showRightBlock: true, pageTitle: 'Работы'})
   include ../components/menu/menu.pug
 
