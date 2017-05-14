@@ -13,8 +13,6 @@ block content
       div(elem="wrap")
         div(elem="block" data-link="/sketch-post.html" style="transform: translate3d(100%, 0, 0); opacity: 0;").animated
           div(elem="inner-wrap")
-            a(elem="label").cur.no-underline
-              span.transform-middle= randomText()
 
             ul(elem="tags-list").lsn.pl0.mb0
               -for(var w = 0; w < randomInt(4, 1); w++)
@@ -22,8 +20,11 @@ block content
 
             span(elem="time") /#{addZeroToNumber(i + 1)}
 
-            a(elem="image-wrap").cur
-              img(src=randomImage(294, 220), alt="sketch mini image" elem="image")
+            .cur(elem="image-wrap")
+              img(src=randomImage(294, 220), alt="portfolio mini image" elem="image")
+
+            div(elem="label")
+              span.transform-middle= randomText()
 
 block footer
   include ../components/footer/footer.pug
