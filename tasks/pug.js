@@ -1,7 +1,16 @@
 import gulp from 'gulp';
 import data from '../src/data';
 import faker from 'faker';
-import { config, $, bs, errorLogFunc, isDev, isProd, transliterate } from './config';
+import {
+  config,
+  $,
+  bs,
+  errorLogFunc,
+  isDev,
+  isProd,
+  transliterate,
+  capitalizeFirstChar
+} from './config';
 
 const utils = {
   addZeroToNumber(num) {
@@ -17,7 +26,7 @@ const utils = {
   },
 
   randomTag() {
-    return data.tags[utils.randomInt(data.tags.length - 1, 0)];
+    return capitalizeFirstChar(faker.random.word());
   },
 
   randomImage(width, height) {

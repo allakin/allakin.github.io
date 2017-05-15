@@ -115,3 +115,5 @@ export const transliterate = (text = '', engToRus = false) => {
 
   return text;
 };
+
+export const capitalizeFirstChar = string => string.charAt(0).toUpperCase() + string.substring(1);
