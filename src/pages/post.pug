@@ -15,7 +15,7 @@ mixin shortImageSection()
   - var randomShortImageHeight = randomInt(3, 10) * 100
 
   section.container(elem="section")
-    a(href=`${randomImage(1920, 1080)}` data-fluidbox)
+    a(href=`${randomImage(960, randomShortImageHeight)}` data-fluidbox)
       img(src=randomImage(960, randomShortImageHeight), alt="section image").table-center
 
   section.container(elem="section")
