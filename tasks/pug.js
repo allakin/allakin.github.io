@@ -27,6 +27,13 @@ const utils = {
     return `http://placehold.it/${width}x${height}`;
   },
 
+  softRandomImage(width, height) {
+    if (isProd) {
+      return `https://unsplash.it/${width}/${height}`;
+    }
+    return `http://placehold.it/${width}x${height}`;
+  },
+
   getActive(exp) {
     if (exp) return 'active';
     return '';
