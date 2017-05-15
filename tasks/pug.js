@@ -1,14 +1,15 @@
 import gulp from 'gulp';
 import data from '../src/data';
-import { config, $, bs, errorLogFunc, isDev, isProd } from './config';
+import faker from 'faker';
+import { config, $, bs, errorLogFunc, isDev, isProd, transliterate } from './config';
 
 const utils = {
   addZeroToNumber(num) {
     return ('0' + num).slice(-2);
   },
 
-  randomInt(max, min) {
-    return Math.floor(Math.random() * (max - (min + 1))) + min;
+  randomInt(min, max) {
+    return faker.random.number({ min, max });
   },
 
   randomText() {
@@ -29,6 +30,14 @@ const utils = {
   getActive(exp) {
     if (exp) return 'active';
     return '';
+  },
+
+  getRandomText() {
+    return transliterate(faker.lorem.paragraph(), true);
+  },
+
+  getRandomBool() {
+    return faker.random.boolean();
   },
 };
 

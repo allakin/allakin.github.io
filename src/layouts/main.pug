@@ -34,9 +34,15 @@ html(lang="ru")
     //- добавляем normalize.css
     //- link(href="https://unpkg.com/normalize.css", rel="stylesheet")
     +css('https://unpkg.com/animate.css/animate.css')
+    +css('https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css')
 
     //- подключаем файл со стилями
     +css('css/style.css')
+
+    //- if DEV
+      +css('https://blokkfont-losgordos.netdna-ssl.com/v2/blokkfont.css')
+      style.
+        body{font-family: "BLOKK" !important;}
 
     if DEV
       +css('css/dev-style.css')
@@ -81,6 +87,8 @@ html(lang="ru")
       +script('js/jquery.min.js')
     if PROD
       +script('//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+
+    +script('https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js')
 
     block script
 

@@ -1,5 +1,27 @@
 extends ../layouts/main
 
+mixin wideImageSection()
+  section(elem="section")
+    - var randomWideImageHeight = randomInt(3, 10) * 100
+
+    a(href=`${randomImage(1920, randomWideImageHeight)}` data-fluidbox)
+      img(src=randomImage(1920, randomWideImageHeight), alt="section image").table-center
+
+  section.container(elem="section")
+    .col-xs-8.col-xs-offset-2(elem="col")
+      p= getRandomText()
+
+mixin shortImageSection()
+  - var randomShortImageHeight = randomInt(3, 10) * 100
+
+  section.container(elem="section")
+    a(href=`${randomImage(1920, 1080)}` data-fluidbox)
+      img(src=randomImage(960, randomShortImageHeight), alt="section image").table-center
+
+  section.container(elem="section")
+    .col-xs-8.col-xs-offset-2(elem="col")
+      p= `${getRandomText()} ${getRandomText()} ${getRandomText()}`
+
 block header
   +header({showLeftBlock: false, showRightBlock: true})
   include ../components/menu/menu.pug
@@ -11,27 +33,22 @@ block content
         a(href="/" elem="back-link").no-underline
           include ../includes/icons/icon-post-back.svg
           span(elem="back-text") Вернуться к работам
-        h1(elem="title")= randomText()
-        span(elem="time").roboto 01/01/2017
+        h1(elem="title")= getRandomText()
+        span(elem="time").roboto= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
 
     div(elem="content")
       section.container(elem="section")
         .col-xs-8.col-xs-offset-2(elem="col")
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p= getRandomText()
 
-      section(elem="section")
-        img(src=randomImage(1920, 500), alt="").table-center
+      -for(var i = 0; i < randomInt(5, 10); i++)
 
-      section.container(elem="section")
-        .col-xs-8.col-xs-offset-2(elem="col")
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        if getRandomBool()
+          +wideImageSection()
 
-      section.container(elem="section")
-        img(src=randomImage(960, 400), alt="").table-center
+        if getRandomBool()
+          +shortImageSection()
 
-      section.container(elem="section")
-        .col-xs-8.col-xs-offset-2(elem="col")
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
       include ../components/post-nav/post-nav.pug
 
