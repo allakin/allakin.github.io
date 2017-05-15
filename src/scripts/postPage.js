@@ -11,4 +11,6 @@ $(() => {
   $(window).scroll(function() {
   	$('a[data-fluidbox]').fluidbox('close');
   });
+
+  $('.viewport-checker').viewportChecker();
 });

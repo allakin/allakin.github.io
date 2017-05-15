@@ -4,7 +4,7 @@ mixin wideImageSection()
   section(elem="section")
     - var randomWideImageHeight = randomInt(3, 10) * 100
 
-    a(href=`${softRandomImage(1920, randomWideImageHeight)}` data-fluidbox data-fluidbox-loader="true")
+    a(href=`${softRandomImage(1920, randomWideImageHeight)}` data-fluidbox data-fluidbox-loader="true" data-vp-add-class="fade" data-vp-offset="100" elem="section-image-link").viewport-checker
       img(src=softRandomImage(1920, randomWideImageHeight), alt="section image").table-center
 
   section.container(elem="section")

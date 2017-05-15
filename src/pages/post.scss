@@ -57,4 +57,14 @@
   &__section{
     margin-bottom: 136px;
   }
+
+  &__section-image-link{
+    opacity: 0;
+    transition: all 3s ease;
+    display: block;
+
+    &.fade {
+      opacity: 1;
+    }
+  }
 }
