@@ -4,12 +4,7 @@ const navigation = $('.cd-primary-nav');
 const toggleNav = $('.header__menu-button');
 const closeMenuBtn = $('.menu__close');
 
-layerInit();
-$(window).on('resize', () => {
-  window.requestAnimationFrame(layerInit);
-});
-
-closeMenuBtn.on('click', () => {
+const closeMenuFunc = () => {
   overlayContent.children('span').velocity({
     translateZ: 0,
     scaleX: 1,
@@ -50,9 +45,8 @@ closeMenuBtn.on('click', () => {
       });
     }
   });
-});
-
-toggleNav.on('click', () => {
+};
+const openMenuFunc = () => {
   overlayNav.children('span').velocity({
     translateZ: 0,
     scaleX: 1,
@@ -60,9 +54,8 @@ toggleNav.on('click', () => {
   }, 500, 'easeInCubic', () => {
     navigation.addClass('fade-in');
   });
-});
-
-function layerInit() {
+}
+const layerInit = () => {
   var diameterValue =
     Math.sqrt(
       Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2),
@@ -108,6 +101,22 @@ function layerInit() {
     );
 }
 
+layerInit();
+$(window).on('resize', () => {
+  window.requestAnimationFrame(layerInit);
+});
+
+closeMenuBtn.on('click', closeMenuFunc);
+
+$(document).keyup(function(e) {
+  // escape key maps to keycode `27`
+  if (e.keyCode == 27) {
+    closeMenuFunc();
+  }
+});
+
+toggleNav.on('click', openMenuFunc);
+
 let currentMenuItem = '';
 
 $('.menu__list-item').each((i, e) => {
@@ -122,10 +131,7 @@ $('.menu__list-item').each((i, e) => {
 // menu-icon-sketchs
 
 $(`#menu-icon-${currentMenuItem}`)
-  // .velocity('stop')
-  .velocity({ opacity: 1 }, { display: "block" }, 500)
-
-// debugger;
+  .velocity({ opacity: 1 }, { display: 'block' }, 500)
 
 $('.menu__list-link').hover((event) => {
   let hoverId = $(event.target).data('id');
