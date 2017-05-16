@@ -2,7 +2,7 @@ footer(block="footer").clearfix
   ul(elem="social").lsn.clearfix.pl0.pull-left.mb0
     each val, key in footerLinks
       li(elem="social-item").pull-left
-        a(elem="social-link" href="#{val.url}").cur #{val.label}
+        a(elem="social-link" href=val.url).cur #{val.label}
 
   div(elem="copyright").pull-right.roboto
     | copyright&nbsp;
