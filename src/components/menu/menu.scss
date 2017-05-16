@@ -164,7 +164,7 @@
 }
 
 .cd-overlay-nav {
-  z-index: 2;
+  z-index: 1000;
 
   span {
     background-color: $accent-color;
@@ -172,7 +172,7 @@
 }
 
 .cd-overlay-content  {
-  z-index: 11;
+  z-index: 1011;
 
   span {
     background-color: #fff;

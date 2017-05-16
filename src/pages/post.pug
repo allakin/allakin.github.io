@@ -2,7 +2,7 @@ extends ../layouts/main
 
 mixin wideImageSection()
   section(elem="section")
-    - var randomWideImageHeight = randomInt(3, 10) * 100
+    - var randomWideImageHeight = randomInt(5, 10) * 100
 
     a(href=`${softRandomImage(1920, randomWideImageHeight)}` data-fluidbox data-fluidbox-loader="true" data-vp-add-class="fade" data-vp-offset="100" elem="section-image-link").viewport-checker
       img(src=softRandomImage(1920, randomWideImageHeight), alt="section image").table-center
@@ -42,6 +42,12 @@ block content
           p= getRandomText()
 
       -for(var i = 0; i < randomInt(5, 10); i++)
+
+        if getRandomBool()
+          +wideImageSection()
+
+        if getRandomBool()
+          +shortImageSection()
 
         if getRandomBool()
           +wideImageSection()
