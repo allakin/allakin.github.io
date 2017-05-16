@@ -56,7 +56,7 @@ const openMenuFunc = () => {
   });
 }
 const layerInit = () => {
-  var diameterValue =
+  const diameterValue =
     Math.sqrt(
       Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2),
     ) * 2;
@@ -99,7 +99,7 @@ const layerInit = () => {
       },
       0,
     );
-}
+};
 
 layerInit();
 $(window).on('resize', () => {
@@ -108,11 +108,9 @@ $(window).on('resize', () => {
 
 closeMenuBtn.on('click', closeMenuFunc);
 
-$(document).keyup(function(e) {
+$(document).keyup((e) => {
   // escape key maps to keycode `27`
-  if (e.keyCode == 27) {
-    closeMenuFunc();
-  }
+  if (e.keyCode == 27) closeMenuFunc();
 });
 
 toggleNav.on('click', openMenuFunc);
@@ -125,13 +123,8 @@ $('.menu__list-item').each((i, e) => {
   }
 })
 
-// menu-icon-works
-// menu-icon-blog
-// menu-icon-about-me
-// menu-icon-sketchs
-
 $(`#menu-icon-${currentMenuItem}`)
-  .velocity({ opacity: 1 }, { display: 'block' }, 500)
+  .velocity({ opacity: 1 }, { display: 'block' }, 500);
 
 $('.menu__list-link').hover((event) => {
   let hoverId = $(event.target).data('id');
@@ -140,12 +133,11 @@ $('.menu__list-link').hover((event) => {
 
   $(`#menu-icon-${currentMenuItem}`)
     .velocity('stop')
-    .velocity({ opacity: 0 }, { display: "none" }, 500)
+    .velocity({ opacity: 0 }, { display: 'none' }, 500)
 
   $(`#menu-icon-${hoverId}`)
     .velocity('stop')
-    .velocity({ opacity: 1 }, { display: "block" }, 500)
-
+    .velocity({ opacity: 1 }, { display: 'block' }, 500)
 }, (event) => {
   let hoverId = $(event.target).data('id');
 
@@ -153,9 +145,9 @@ $('.menu__list-link').hover((event) => {
 
   $(`#menu-icon-${hoverId}`)
     .velocity('stop')
-    .velocity({ opacity: 0 }, { display: "none" }, 500)
+    .velocity({ opacity: 0 }, { display: 'none' }, 500)
 
   $(`#menu-icon-${currentMenuItem}`)
     .velocity('stop')
-    .velocity({ opacity: 1 }, { display: "block" }, 500)
+    .velocity({ opacity: 1 }, { display: 'block' }, 500)
 });
