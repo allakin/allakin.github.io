@@ -1,3 +1,3 @@
 mixin favicon(arr)
   each val, key in arr
-    link(rel='icon', href='img/favicon-#{val}.png', sizes='#{val}x#{val}', type='image/png')
+    link(rel='icon', href=`img/favicon-${val}.png`, sizes=`${val}x${val}`, type='image/png')
