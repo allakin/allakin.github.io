@@ -1,5 +1,6 @@
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
+import faker from 'faker';
 
 export const $ = gulpLoadPlugins({});
 export const bs = browserSync;
@@ -117,3 +118,44 @@ export const transliterate = (text = '', engToRus = false) => {
 };
 
 export const capitalizeFirstChar = string => string.charAt(0).toUpperCase() + string.substring(1);
+
+export const utils = {
+  addZeroToNumber(num) {
+    return ('0' + num).slice(-2);
+  },
+
+  randomInt(min, max) {
+    return faker.random.number({ min, max });
+  },
+
+  randomTag() {
+    return capitalizeFirstChar(faker.random.word());
+  },
+
+  randomImage(width, height) {
+    if (isProd) {
+      return `https://unsplash.it/${width}/${height}/?random=${utils.randomInt(1000, 1)}`;
+    }
+    return `http://placehold.it/${width}x${height}`;
+  },
+
+  softRandomImage(width, height) {
+    if (isProd) {
+      return `https://unsplash.it/${width}/${height}`;
+    }
+    return `http://placehold.it/${width}x${height}`;
+  },
+
+  getActive(exp) {
+    if (exp) return 'active';
+    return '';
+  },
+
+  getRandomText() {
+    return transliterate(faker.lorem.paragraph(), true);
+  },
+
+  getRandomBool() {
+    return faker.random.boolean();
+  },
+};
