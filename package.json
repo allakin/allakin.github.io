@@ -30,6 +30,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.0",
     "bootstrap-only-css": "^1.0.0",
+    "bourbon": "^4.3.4",
     "browser-sync": "^2.18.11",
     "css-mqpacker": "^6.0.0",
     "css.modifiers": "^1.0.0",
