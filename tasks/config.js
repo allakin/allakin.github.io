@@ -93,6 +93,10 @@ export const config = {
     require('css-mqpacker'),
     require('postcss-discard-comments')({ removeAll: true }),
     require('postcss-csso'),
+    require('postcss-pseudoelements')({
+      single: true, // default
+      selectors: ['before', 'after', 'first-letter', 'first-line'], // default
+    }),
   ],
 
   PERFECTIONIST: [
