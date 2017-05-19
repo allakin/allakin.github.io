@@ -115,6 +115,20 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  &__icon-container{
+    @media(max-width: 1023px){
+      display: none;
+    }
+  }
+
+  &__list-container{
+    @media(max-width: 1023px){
+      display: table;
+      margin: 0 auto;
+      width: auto;
+    }
+  }
 }
 
 .cd-primary-nav {
