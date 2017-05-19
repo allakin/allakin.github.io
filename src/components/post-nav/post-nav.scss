@@ -7,6 +7,12 @@
     padding-bottom: 45px;
     padding-left: 80px;
     padding-right: 80px;
+    @extend %hover-block-animation;
+
+    @media(max-width: 1300px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__nav-left,

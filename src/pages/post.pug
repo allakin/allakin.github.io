@@ -8,7 +8,7 @@ mixin wideImageSection()
       img(src=softRandomImage(1920, randomWideImageHeight), alt="section image").table-center.img-responsive
 
   section.container(elem="section")
-    .col-xs-8.col-xs-offset-2(elem="col")
+    .col-md-8.col-md-offset-2(elem="col")
       p= getRandomText()
 
 mixin shortImageSection()
@@ -19,7 +19,7 @@ mixin shortImageSection()
       img(src=softRandomImage(960, randomShortImageHeight), alt="section image").table-center.img-responsive
 
   section.container(elem="section")
-    .col-xs-8.col-xs-offset-2(elem="col")
+    .col-md-8.col-md-offset-2(elem="col")
       p= `${getRandomText()} ${getRandomText()} ${getRandomText()}`
 
 block header
@@ -38,18 +38,18 @@ block content
 
     div(elem="content")
       section.container(elem="section")
-        .col-xs-8.col-xs-offset-2(elem="col")
+        .col-md-8.col-md-offset-2(elem="col")
           p= getRandomText()
 
       -for(var i = 0; i < randomInt(5, 10); i++)
 
-        if getRandomBool()
+        //- if getRandomBool()
           +wideImageSection()
 
-        if getRandomBool()
+        //- if getRandomBool()
           +shortImageSection()
 
-        if getRandomBool()
+        //- if getRandomBool()
           +wideImageSection()
 
         if getRandomBool()
