@@ -4,12 +4,27 @@
     background-position: top center;
     background-size: cover;
     margin-bottom: 100px;
+
+    @media(max-width: 1023px){
+      height: auto;
+    }
   }
 
   &__middle{
     max-width: 960px;
     margin: 0 auto;
-    // padding: 1px;
+    padding-left: 136px;
+    padding-right: 136px;
+
+    @media(max-width: 1023px){
+      padding-left: 15px;
+      padding-right: 15px;
+
+      top: 0;
+      transform: translateY(0%);
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   &__title{
