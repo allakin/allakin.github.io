@@ -35,3 +35,12 @@ dl, ol, ul {
 .bold{
   font-weight: 800;
 }
+
+a{
+  color: #BC46CB;
+  transition: all .3s ease;
+
+  &:hover{
+    color: #BC46CB;
+  }
+}
