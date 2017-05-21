@@ -1,48 +1,81 @@
-.post-nav{
-  &__nav-left,
-  &__nav-center,
-  &__nav-right{
+.post-nav {
+  &__left,
+  &__center,
+  &__right {
     height: 140px;
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 80px;
     padding-right: 80px;
-    @extend %hover-block-animation;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    z-index: 1;
 
-    @media(max-width: 1300px){
+    &:hover {
+      //background-color: #DDF34B;
+
+      &:after {
+        transform: translate3d(0,0,0);
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      background-color: #DDF34B;
+      transform: translate3d(-101%,0,0);
+      z-index: -1;
+      transition: transform 1s cubic-bezier(0.11, 0.7, 0, 1);
+    }
+
+    @media (max-width: 1300px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (max-width: 1200px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (max-width: 1300px) {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
 
-  &__nav-left,
-  &__nav-right{
+  &__left,
+  &__right {
     padding-left: 230px;
     padding-right: 230px;
   }
 
-  &__nav-left{
+  &__left {
     float: left;
 
-    &:hover{
-      background-color: $accent-color;
+    &:hover {
+      //background-color: $accent-color;
     }
   }
 
-  &__nav-center{
+  &__center {
     float: left;
     padding: 49px 80px;
 
-    &:hover{
-      background-color: $accent-color;
+    &:hover {
+      //background-color: $accent-color;
     }
   }
 
-  &__nav-right{
+  &__right {
     float: left;
 
-    &:hover{
-      background-color: $accent-color;
+    &:hover {
+      //background-color: $accent-color;
     }
   }
 }

@@ -9,7 +9,7 @@ mixin wideImageSection()
 
   section.container(elem="section")
     .col-md-8.col-md-offset-2(elem="col")
-      p= getRandomText()
+      p.roboto= getRandomText()
 
 mixin shortImageSection()
   - var randomShortImageHeight = randomInt(3, 10) * 100
@@ -20,7 +20,7 @@ mixin shortImageSection()
 
   section.container(elem="section")
     .col-md-8.col-md-offset-2(elem="col")
-      p= `${getRandomText()} ${getRandomText()} ${getRandomText()}`
+      p.roboto= `${getRandomText()} ${getRandomText()} ${getRandomText()}`
 
 block header
   +header({showLeftBlock: false, showRightBlock: true})
@@ -39,7 +39,7 @@ block content
     div(elem="content")
       section.container(elem="section")
         .col-md-8.col-md-offset-2(elem="col")
-          p= getRandomText()
+          p.roboto= getRandomText()
 
       -for(var i = 0; i < randomInt(5, 10); i++)
 
