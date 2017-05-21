@@ -115,13 +115,13 @@ $(document).keyup((e) => {
 
 toggleNav.on('click', openMenuFunc);
 
-let currentMenuItem = '';
+let currentMenuItem = 'default';
 
 $('.menu__list-item').each((i, e) => {
-  if($(e).hasClass('active')) {
+  if ($(e).hasClass('active')) {
     currentMenuItem = $(e).find('a').data('id');
   }
-})
+});
 
 $(`#menu-icon-${currentMenuItem}`)
   .velocity({ opacity: 1 }, { display: 'block' }, 500);
