@@ -82,4 +82,19 @@
       opacity: 1;
     }
   }
+
+  &__section-image{
+    transition: all .6s ease !important;
+    box-shadow: 0 0px 0px rgba(221, 243, 75, .53);
+  }
+}
+
+.fluidbox__wrap{
+  &:hover{
+    .post{
+      &__section-image{
+        box-shadow: 0 110px 70px rgba(221, 243, 75, .53);
+      }
+    }
+  }
 }
