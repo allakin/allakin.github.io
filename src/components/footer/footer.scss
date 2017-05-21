@@ -27,25 +27,27 @@
     // font-size: 14px;
     // font-weight: 700;
     position: relative;
+    @extend %link-hover-effect;
 
     &:hover{
-      color: $main-color;
-      text-decoration: none;
-      &:before{
-        display: block;
+      // color: $main-color;
+      // text-decoration: none;
+      &:after{
+        background-color: #BC46CB;
+        // display: block;
       }
     }
 
     &:before{
-      display: none;
-      position: absolute;
-      content: '';
-      height: 5px;
-      background: $additional-yellow-color;
-      left: -2px;
-      right: -2px;
-      bottom: 6px;
-      z-index: -1;
+      // display: none;
+      // position: absolute;
+      // content: '';
+      // height: 5px;
+      // background: $additional-yellow-color;
+      // left: -2px;
+      // right: -2px;
+      // bottom: 6px;
+      // z-index: -1;
     }
   }
 
