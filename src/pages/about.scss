@@ -1,0 +1,56 @@
+.about{
+  &__head{
+    padding-top: 200px;
+    padding-bottom: 221px;
+
+    &-text{
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    &-title{
+      font-size: 45px;
+      line-height: 1.53;
+    }
+
+    &-wrap{
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  }
+
+  &__photo{
+    margin-bottom: 115px;
+  }
+
+  &__description{
+    margin-bottom: 102px;
+
+    &-text{
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  &__social{
+    margin-bottom: 168px;
+
+    &-item{
+      width: 33.33333%;
+
+      &:nth-child(2){
+        text-align: center;
+      }
+
+      &:nth-child(3){
+        text-align: right;
+      }
+    }
+    &-link{
+      font-size: 40px;
+      color: #000;
+    }
+  }
+}

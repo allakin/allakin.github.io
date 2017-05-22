@@ -21,7 +21,7 @@ const data = {
       id: 'about-me',
     },
   ],
-  footerLinks: [
+  socialLinks: [
     {
       url: 'https://www.behance.net/allakin',
       label: 'Behance',

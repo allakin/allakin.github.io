@@ -1,4 +1,46 @@
 extends ../layouts/main
 
+block header
+  - var activeMenuPage = 'about-me'
+  +header({showLeftBlock: true, showRightBlock: true, pageTitle: 'Обо мне'})
+  include ../components/menu/menu.pug
+
 block content
-  h1 Обо мне
+  include ../components/preloader/preloader.pug
+
+  div(block="about")
+    div(elem="head")
+      div(elem="head-wrap")
+        p(elem="head-text") Позвольте представиться…
+        h1(elem="head-title") Я, Анплеенко Павел Валерьевич <br>и я дизайнер интерфейсов.
+
+    div(elem="photo").container
+      .row(elem="row")
+        .col-md-10.col-md-offset-1(elem="col")
+          img(elem="photo-img" src=randomImage(794, 536) alt="my photo").table-center.img-responsive
+
+    div(elem="description").container
+      .row(elem="row")
+        .col-md-10.col-md-offset-1(elem="col")
+          p(elem="description-text").roboto= `${getRandomText()} ${getRandomText()} ${getRandomText()} ${getRandomText()}`
+
+    div(elem="social-links").container
+      .row(elem="row")
+        .col-md-10.col-md-offset-1(elem="col")
+          ul(elem="social").lsn.clearfix.pl0.mb0
+            each val, key in socialLinks
+              li(elem="social-item").pull-left
+                a(elem="social-link" href=val.url).cur #{val.label}
+
+    div(elem="projects").container
+      h3(elem="projects-title") Участвовал в проектах:
+      .row(elem="row")
+        .col-md-10.col-md-offset-1(elem="col")
+          p alkjsaj
+    div(elem="close-page")
+
+block script
+  +script('js/velocity.min.js')
+  +script('js/velocity.ui.min.js')
+  +script('js/isMobile.min.js')
+  +script('js/aboutPage.js')
