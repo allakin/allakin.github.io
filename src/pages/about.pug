@@ -36,8 +36,16 @@ block content
       h3(elem="projects-title") Участвовал в проектах:
       .row(elem="row")
         .col-md-10.col-md-offset-1(elem="col")
-          p alkjsaj
-    div(elem="close-page")
+          div(block="work-list")
+            -for(var i = 0; i < randomInt(5, 10); i++)
+              div(elem="row")
+                div(elem="time").roboto= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
+                div(elem="title").roboto= getRandomText()
+                div(elem="link-wrap")
+                  a(href="#" elem="link").roboto= randomTag()
+
+    div(elem="close-page").cur
+      include ../includes/icons/icon-post-close.svg
 
 block script
   +script('js/velocity.min.js')

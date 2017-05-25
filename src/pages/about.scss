@@ -53,4 +53,68 @@
       color: #000;
     }
   }
+
+  &__projects-title{
+    font-size: 45px;
+    margin-bottom: 118px;
+  }
+
+  &__close-page{
+    display: table;
+    margin: 0 auto;
+    padding: 50px 80px;
+  }
+}
+
+.work-list{
+  //@include clearfix;
+  //display: flex;
+  padding-bottom: 239px;
+
+  &__row + &__row{
+    padding-top: 60px;
+  }
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__time{
+    //width: 127px;
+    //height: 24px;
+    font-size: 20px;
+    //text-align: left;
+    //color: #000;
+    padding-right: 50px;
+
+    //width: 15%;
+    //float: left;
+  }
+
+  &__title{
+    overflow: hidden;
+    line-height: (80/3) + px;
+    max-height: 80px;
+
+    font-size: 20px;
+    //text-align: left;
+    //color: #000;
+    padding-right: 60px;
+    //width: 60%;
+    //float: left;
+  }
+
+  &__link-wrap{
+    //width: 15%;
+    //float: left;
+    text-align: center;
+  }
+
+  &__link{
+    //width: 211px;
+    //height: 24px;
+    font-size: 20px;
+    color: #bc46cb;
+  }
 }
