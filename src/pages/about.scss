@@ -60,9 +60,17 @@
   }
 
   &__close-page{
-    display: table;
-    margin: 0 auto;
-    padding: 50px 80px;
+    //display: table;
+    //margin: 0 auto;
+    //padding: 50px 80px;
+  }
+
+  &__typed-text{
+    color: #bc46cb;
+
+    & + .typed-cursor{
+      color: #bc46cb;
+    }
   }
 }
 
