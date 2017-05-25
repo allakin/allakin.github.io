@@ -12,7 +12,8 @@ block content
     div(elem="head")
       div(elem="head-wrap")
         p(elem="head-text") Позвольте представиться…
-        h1(elem="head-title") Я, Анплеенко Павел Валерьевич <br>и я дизайнер интерфейсов.
+        h1(elem="head-title") Я, Анплеенко Павел Валерьевич <br>и я&nbsp;
+          span(elem="typed-text") дизайнер интерфейсов.
 
     div(elem="photo").container
       .row(elem="row")
@@ -51,4 +52,5 @@ block script
   +script('js/velocity.min.js')
   +script('js/velocity.ui.min.js')
   +script('js/isMobile.min.js')
+  +script('js/typed.min.js')
   +script('js/aboutPage.js')
