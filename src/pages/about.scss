@@ -3,6 +3,11 @@
     padding-top: 200px;
     padding-bottom: 221px;
 
+    @media(max-width: 1023px){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     &-text{
       font-size: 20px;
       text-transform: uppercase;
@@ -39,15 +44,35 @@
 
     &-item{
       width: 33.33333%;
+      float: left;
+
+      @media(max-width: 1023px){
+        margin: 0 auto;
+        float:none;
+      }
+
+      &:nth-child(1){
+        @media(max-width: 1023px){
+          text-align: center;
+        }
+      }
 
       &:nth-child(2){
         text-align: center;
+
+        @media(max-width: 1023px){
+          // text-align: left;
+        }
       }
 
       &:nth-child(3){
         text-align: right;
+        @media(max-width: 1023px){
+          text-align: center;
+        }
       }
     }
+
     &-link{
       font-size: 40px;
       color: #000;

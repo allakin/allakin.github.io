@@ -30,7 +30,7 @@ block content
         .col-md-10.col-md-offset-1(elem="col")
           ul(elem="social").lsn.clearfix.pl0.mb0
             each val, key in socialLinks
-              li(elem="social-item").pull-left
+              li(elem="social-item")
                 a(elem="social-link" href=val.url).cur #{val.label}
 
     div(elem="projects").container
