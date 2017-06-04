@@ -35,6 +35,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
+    @extend %add-class-block-animation;
 
     @media(max-width: 1023px){
       font-size: 30px;
@@ -46,13 +47,16 @@
 
   &__time{
     font-size: 20px;
+    @extend %add-class-block-animation;
   }
 
   &__back-link{
     margin-bottom: 38px;
     display: inline-block;
+    @extend %add-class-block-animation;
     svg{
       vertical-align: middle;
+      display: none;
     }
   }
 
