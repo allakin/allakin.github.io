@@ -54,6 +54,12 @@
     margin-bottom: 38px;
     display: inline-block;
     @extend %add-class-block-animation;
+    &:hover{
+      .post__back-text{
+        // left: 20px;
+        margin-left: 20px;
+      }
+    }
     svg{
       vertical-align: middle;
       display: none;
@@ -64,7 +70,11 @@
     margin-left: 14px;
     font-size: 16px;
     color: #ef4f80;
+    -webkit-text-fill-color: #ef4f80;
     vertical-align: middle;
+    // position: relative;
+    // left: 0;
+    transition: margin .5s ease;
   }
 
   &__content{
