@@ -1,4 +1,38 @@
 extends ../layouts/main
 
+block header
+  - var activeMenuPage = 'blog'
+  +header({showLeftBlock: true, showRightBlock: true, pageTitle: 'Блог'})
+  include ../components/menu/menu.pug
+
 block content
-  h1 Блог
+  include ../components/preloader/preloader.pug
+
+  div(block="blog")
+    div(elem="last-news" style=`background-image: url(${randomImage(1920, 1080)})`)
+      .transform-middle(elem="middle")
+        h1(elem="title")= getRandomText()
+        span(elem="time").roboto= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
+        span(elem="link") Последняя новость
+
+    div(elem="content")
+      -for(var i = 0; i < randomInt(5, 10); i++)
+        div(elem="blog-post").clearfix
+          div(elem="blog-post-info")
+            h3(elem="blog-post-title")
+              a(href="#" elem="blog-post-link")= getRandomText()
+            span(elem="blog-post-time")= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
+          div(elem="blog-post-thumb")
+            a(href="#" elem="blog-post-link-thumb")
+              img(src=randomImage(377, 250) alt="blog post thumb" elem="blog-post-thumb-image")
+
+block footer
+  include ../components/footer/footer.pug
+
+block script
+  +script('js/jquery.jInvertScroll.min.js')
+  +script('js/hammer.min.js')
+  +script('js/velocity.min.js')
+  +script('js/velocity.ui.min.js')
+  +script('js/isMobile.min.js')
+  +script('js/blogPage.js')
