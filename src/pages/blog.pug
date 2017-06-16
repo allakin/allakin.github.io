@@ -20,10 +20,10 @@ block content
         div(elem="blog-post").clearfix
           div(elem="blog-post-info")
             h3(elem="blog-post-title")
-              a(href="#" elem="blog-post-link")= getRandomText()
+              a(href="/blog_post.html" elem="blog-post-link")= getRandomText()
             span(elem="blog-post-time")= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
           div(elem="blog-post-thumb")
-            a(href="#" elem="blog-post-link-thumb")
+            a(href="/blog_post.html" elem="blog-post-link-thumb")
               img(src=randomImage(377, 250) alt="blog post thumb" elem="blog-post-thumb-image")
 
 block footer

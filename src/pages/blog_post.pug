@@ -1,0 +1,65 @@
+extends ../layouts/main
+
+mixin wideImageSection()
+  section(elem="section")
+    - var randomWideImageHeight = randomInt(5, 10) * 100
+
+    a(href=`${softRandomImage(1920, randomWideImageHeight)}` data-fluidbox data-fluidbox-loader="true" data-vp-add-class="fade" data-vp-offset="100" elem="section-image-link").viewport-checker
+      img(src=softRandomImage(1920, randomWideImageHeight), alt="section image" elem="section-image").table-center.img-responsive
+
+  section.container(elem="section")
+    .col-md-8.col-md-offset-2(elem="col")
+      p.roboto= getRandomText()
+
+mixin shortImageSection()
+  - var randomShortImageHeight = randomInt(3, 10) * 100
+
+  section.container(elem="section")
+    a(href=`${softRandomImage(960, randomShortImageHeight)}` data-fluidbox data-fluidbox-loader="true" data-vp-add-class="fade" data-vp-offset="100" elem="section-image-link").viewport-checker
+      img(src=softRandomImage(960, randomShortImageHeight), alt="section image" elem="section-image").table-center.img-responsive
+
+  section.container(elem="section")
+    .col-md-8.col-md-offset-2(elem="col")
+      p.roboto= `${getRandomText()} ${getRandomText()} ${getRandomText()}`
+
+block header
+  +header({showLeftBlock: false, showRightBlock: true})
+  include ../components/menu/menu.pug
+
+block content
+  div(block="post")
+    div(elem="cover" style=`background-image: url(${randomImage(1920, 1080)})`)
+      .transform-middle(elem="middle")
+        a(href="/" elem="back-link").no-underline
+          include ../includes/icons/icon-post-back.svg
+          span(elem="back-text") Вернуться к работам
+        h1(elem="title")= getRandomText()
+        span(elem="time").roboto= `${addZeroToNumber(randomInt(1, 28))}/${addZeroToNumber(randomInt(1, 12))}/${randomInt(1900, 2010)}`
+
+    div(elem="content")
+      section.container(elem="section")
+        .col-md-8.col-md-offset-2(elem="col")
+          p.roboto= getRandomText()
+
+      -for(var i = 0; i < randomInt(5, 10); i++)
+
+        if getRandomBool()
+          +wideImageSection()
+
+        if getRandomBool()
+          +shortImageSection()
+
+        if getRandomBool()
+          +wideImageSection()
+
+        if getRandomBool()
+          +shortImageSection()
+
+
+      include ../components/post-nav/post-nav.pug
+
+block script
+  +script('js/velocity.min.js')
+  +script('js/velocity.ui.min.js')
+  +script('js/isMobile.min.js')
+  +script('js/postPage.js')
