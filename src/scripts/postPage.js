@@ -16,4 +16,12 @@ $(() => {
   $('.post__title,  .post__time, .post__back-link')
     .addClass('active');
   $('.post__back-link svg').show();
+
+  setTimeout(() => {
+    $('.post__back-link').css({ opacity: 1 });
+  }, 300)
+
+  setTimeout(() => {
+    $('.post__cover-image').addClass('fade');
+  }, 900)
 });

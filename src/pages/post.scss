@@ -1,12 +1,28 @@
 .post{
   &__cover{
     height: 100vh;
-    background-position: top center;
-    background-size: cover;
     margin-bottom: 100px;
+    position: relative;
 
     @media(max-width: 1023px){
       height: auto;
+    }
+  }
+
+  &__cover-image{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: top center;
+    background-size: cover;
+    opacity: 0;
+    transition: all 3s ease;
+
+    &.fade {
+      opacity: 1;
     }
   }
 
@@ -54,6 +70,7 @@
     margin-bottom: 38px;
     display: inline-block;
     @extend %add-class-block-animation;
+    opacity: 0;
     &:hover{
       .post__back-text{
         // left: 20px;

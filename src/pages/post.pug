@@ -28,7 +28,8 @@ block header
 
 block content
   div(block="post")
-    div(elem="cover" style=`background-image: url(${randomImage(1920, 1080)})`)
+    div(elem="cover")
+      div(elem="cover-image" style=`background-image: url(${randomImage(1920, 1080)})`)
       .transform-middle(elem="middle")
         a(href="/" elem="back-link").no-underline
           include ../includes/icons/icon-post-back.svg
